@@ -1,0 +1,21 @@
+﻿---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: maciejos-ingress
+  namespace: maciejos
+  annotations:
+    ingress.kubernetes.io/query-routing: default/query-routing
+spec:
+  ingressClassName: public
+  rules:
+    - host: toro.synology.me
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: maciejos
+                port:
+                  number: 8000
