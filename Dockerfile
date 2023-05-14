@@ -1,5 +1,6 @@
 FROM arm64v8/node:20.1.0-alpine3.16 AS builder
 ENV NODE_ENV production
+ENV DISABLE_ESLINT_PLUGIN true
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
