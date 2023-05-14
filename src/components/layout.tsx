@@ -5,10 +5,10 @@ import { About, Contact, Header, Education, Experience, Projects, Skills } from 
 const Layout = () => (
   <Container>
     <Row>
-      <Col xs={12} sm={6}>
+      <Col md={12} lg={6}>
         <Header />
       </Col>
-      <Col xs={12} sm={6}>
+      <Col md={12} lg={6}>
         <About />
         <Education />
         <Experience />
