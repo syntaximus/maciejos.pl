@@ -7,7 +7,7 @@ import Socials from './socials';
 const Header = () => {
   var elem = 'Header';
   return (
-    <header>
+    <header className='sticky-top'>
       <Container className='header d-flex flex-column justify-content-sm-between'>
         <Row>
           <Col>

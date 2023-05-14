@@ -1,9 +1,9 @@
-import './about.css';
+import './footer.css';
 
-const About = () => {
-  var elem = 'About section';
+const Footer = () => {
+  var elem = 'Footer section';
   return (
-    <div id='about' className='py-5 about'>
+    <div id='footer' className='footer'>
       <h3>{elem}</h3>
       <p>
         This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate
@@ -24,4 +24,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Footer;
