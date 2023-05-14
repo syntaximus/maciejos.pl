@@ -1,4 +1,32 @@
+body {
+  background-color: var(--app-background-color);
+  color: var(--app-text-main-color);
+}
+
 .active-scroll-spy {
   background-color: yellowgreen !important;
   border-radius: 15px !important;
+}
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-head-color {
+  color: var(--app-text-main-color);
+}
+
+.text-head-color:hover {
+  color: var(--app-text-main-color);
 }

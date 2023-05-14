@@ -8,21 +8,17 @@ const Header = () => {
   var elem = 'Header';
   return (
     <header className='sticky-top'>
-      <Container className='header d-flex flex-column justify-content-sm-between'>
-        <Row>
-          <Col>
-            <Hero />
-            <div className='d-none d-lg-block'>
-              <Navigation />
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Socials />
-          </Col>
-        </Row>
-      </Container>
+      <div className='header d-flex flex-column justify-content-sm-between'>
+        <div>
+          <Hero />
+          <div className='d-none d-lg-block'>
+            <Navigation />
+          </div>
+        </div>
+        <div>
+          <Socials />
+        </div>
+      </div>
     </header>
   );
 };
