@@ -14,8 +14,8 @@ const Layout = () => (
           <About />
           <Education />
           <Experience />
-          <Projects />
           <Skills />
+          <Projects />
           <Footer />
         </ScrollSpy>
       </Col>

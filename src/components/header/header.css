@@ -1,24 +1,62 @@
 .header {
-  border: 2px dotted black;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
 }
 
 @media all and (min-width: 992px) {
   .header {
-    height: 100vh;
+    /* W firefoxie tekst się przewija o 1 piksel przy scrollowaniu przy ustawiony 100vh */
+    height: calc(100vh - 1px);
   }
 }
 
 @media not all and (min-width: 992px) {
 }
 
-.hero {
-  border: 1px dotted orange;
+.text-navigation {
+  color: var(--app-text-main-color);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
-.navigation {
-  border: 1px dotted orangered;
+
+.text-navigation:hover {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--app-text-main-color);
 }
-.socials {
-  border: 1px dotted brown;
+
+.active-scroll-spy {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.navigation-line {
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  margin-right: 1rem;
+  margin-bottom: 0.25rem;
+  background-color: var(--app-text-main-color);
+  transition-timing-function: cubic-bezier(0.6, 0.1, 0.2, 1);
+  transition-duration: 0.2s;
+}
+
+.active-scroll-spy .navigation-line {
+  width: 4rem;
+}
+
+.text-navigation:hover .navigation-line {
+  width: 4rem;
+}
+
+.navigation-list {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navigation-list li {
+  margin-top: 0.4rem;
 }

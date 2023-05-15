@@ -3,7 +3,7 @@ import './about.css';
 const About = () => {
   var elem = 'About section';
   return (
-    <div id='about' className='py-5 about'>
+    <div id='about' className='about'>
       <h3>{elem}</h3>
       <p>
         This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate

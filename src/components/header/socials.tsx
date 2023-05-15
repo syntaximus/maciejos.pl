@@ -2,7 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Github, Linkedin, Facebook } from '../../assets/icons';
 
 const Socials = () => (
-  <Container className='socials'>
+  <Container>
     <Row>
       <Col xs='auto' className='px-2'>
         <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/syntaximus/'>
