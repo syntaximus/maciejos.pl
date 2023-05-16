@@ -12,12 +12,6 @@ const Navigation = () => {
           </a>
         </li>
         <li>
-          <a className='text-decoration-none text-navigation' data-to-scrollspy-id='education' href='#education'>
-            {navigationIndicator}
-            Wykształcenie
-          </a>
-        </li>
-        <li>
           <a className='text-decoration-none text-navigation' data-to-scrollspy-id='experience' href='#experience'>
             {navigationIndicator}
             Doświadczenie
