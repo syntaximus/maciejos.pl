@@ -11,15 +11,15 @@ const About = () => (
     </p>
     <p>
       Zawodowo zajmuję się tworzeniem aplikacji webowych w środowisku .NET zarówno od strony backendowej, jak i
-      frontendowej. Zrealizowałem wiele projektów, z których korzystają miliony ludzi. Skupiam się na optymalizacji
-      procesów i tworzeniu wydajnego kodu. Cyberbezpieczeństwo to mój konik i dbam o zachowanie wysokich standardów w
-      tej dziedzinie w swoich rozwiązaniach.
+      frontendowej. Zrealizowałem wiele projektów, z których korzystają setki tysięcy ludzi. Skupiam się na
+      optymalizacji procesów i tworzeniu wydajnego kodu. Cyberbezpieczeństwo to mój konik i dbam o zachowanie wysokich
+      standardów w tej dziedzinie w swoich rozwiązaniach.
     </p>
     <p>
-      Stawiam na konteneryzację i administruję swoim klastrem Kubernetes z którego udostępniam aplikacje do internetu.
-      Obecnie zajmuję się tworzeniem serwisu webowego umożliwiającego kontrolowanie wydatków - aplikacji Pan Rachunek.
-      Gdy nie ma mnie przy komputerze najczęściej zajmuję się swoim hobby jakim jest triathlon, a konkretniej trening na
-      pełen dystans ironmana.
+      W swoich projektach stawiam na konteneryzację. Administruję własnym klastrem Kubernetes z którego udostępniam
+      aplikacje do internetu. Obecnie zajmuję się tworzeniem serwisu webowego umożliwiającego kontrolowanie wydatków -
+      aplikacji Pan Rachunek. Gdy nie ma mnie przy komputerze najczęściej zajmuję się swoim hobby jakim jest triathlon,
+      a konkretniej trening na pełen dystans Ironmana.
     </p>
   </div>
 );
