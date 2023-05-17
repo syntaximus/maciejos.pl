@@ -40,6 +40,7 @@ const Experience = () => {
         '.NET 6.0',
         'ASP.NET',
         'SQL',
+        'Ext.js',
         'JavaScript',
         'WCF',
         'C#',
