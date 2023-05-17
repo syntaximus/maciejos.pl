@@ -19,3 +19,14 @@ spec:
                 name: maciejos
                 port:
                   number: 8000
+  rules:
+    - host: maciejos.pl
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: maciejos
+                port:
+                  number: 8000
