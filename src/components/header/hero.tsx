@@ -14,8 +14,8 @@ const Hero = () => (
         <p className='mb-4'>Projektuję, implementuję i wdrażam rozwiązania webowe ułatwiające ludziom życie.</p>
         <p className='mb-2'>
           <Mail style={{ marginRight: 8, width: 24, height: 24 }} />{' '}
-          <a className='text-decoration-none text-head-color text-sm' href='mailto:maciej.tomasz.jakubiak@gmail.com'>
-            maciej.tomasz.jakubiak@gmail.com
+          <a className='text-decoration-none text-head-color text-sm' href='mailto:mjakubiak@maciejos.pl'>
+            mjakubiak@maciejos.pl
           </a>
         </p>
         <p className='mb-5'>
