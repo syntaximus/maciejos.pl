@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Layout } from './components';
 
+import 'photoswipe/dist/photoswipe.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
 import './variables.css';

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Badge, Col, Row } from 'react-bootstrap';
+import { Gallery, Item } from 'react-photoswipe-gallery';
 import { GithubCircle } from '../../assets/icons/github-circle';
 import './projects.css';
 
@@ -15,7 +16,6 @@ export interface IProjectCard {
 const ProjectCard = (props: IProjectCard) => {
   const [maxPicturesColumnHeight, setMaxPicturesColumnHeight] = useState<number | undefined>(undefined);
   const picturesColumRef = useRef<any>(null);
-  const cardRef = useRef<any>(null);
   var badges = [];
   for (let ind = 0; ind < props.technologies.length; ind++) {
     badges.push(
@@ -36,12 +36,24 @@ const ProjectCard = (props: IProjectCard) => {
   }, []);
 
   return (
-    <div className='project-card' ref={cardRef}>
+    <div className='project-card'>
       <Row>
         <Col sm={12} md={3} lg={4} xxl={3} style={{ maxHeight: maxPicturesColumnHeight, overflow: 'hidden' }}>
-          {props.photos.map((value, index) => (
-            <img key={index} alt={'project picture ' + index} src={value} className='project-card-picture' />
-          ))}
+          <Gallery>
+            {props.photos.map((value, index) => (
+              <Item key={index} original={value} thumbnail={value} width='1920' height='1080'>
+                {({ ref, open }) => (
+                  <img
+                    ref={ref as React.LegacyRef<HTMLImageElement>}
+                    alt={'project picture ' + index}
+                    onClick={open}
+                    src={value}
+                    className='project-card-picture'
+                  />
+                )}
+              </Item>
+            ))}
+          </Gallery>
         </Col>
         <Col xs={12} md={9} lg={8} xxl={9} className='h-100' ref={picturesColumRef}>
           <p className='project-card-title m-0'>
