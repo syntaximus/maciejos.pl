@@ -11,9 +11,9 @@ const About = () => (
     </p>
     <p>
       Zawodowo zajmuję się tworzeniem aplikacji webowych w środowisku .NET zarówno od strony backendowej, jak i
-      frontendowej. Zrealizowałem wiele projektów, z których korzystają setki tysięcy ludzi. Skupiam się na
-      optymalizacji procesów i tworzeniu wydajnego kodu. Cyberbezpieczeństwo to mój konik i dbam o zachowanie wysokich
-      standardów w tej dziedzinie w swoich rozwiązaniach.
+      frontendowej. Zrealizowałem wiele projektów z których korzystają setki tysięcy ludzi. Skupiam się na optymalizacji
+      procesów i tworzeniu wydajnego kodu. Cyberbezpieczeństwo to mój konik i dbam o zachowanie wysokich standardów w
+      tej dziedzinie w swoich rozwiązaniach.
     </p>
     <p>
       W swoich projektach stawiam na konteneryzację. Administruję własnym klastrem Kubernetes z którego udostępniam

@@ -133,7 +133,7 @@ const Skills = () => {
   return (
     <div id='skills' className='skills'>
       <h3>{elem}</h3>
-      <p>Moje subiektywna ocena umiejętności w danych obszarach:</p>
+      <p>Moja subiektywna ocena umiejętności w danych obszarach:</p>
       <div className='my-3 skills-card'>
         <h5>Języki</h5>
         <Row>
