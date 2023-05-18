@@ -3,6 +3,7 @@
 }
 
 .experience-card {
+  position: relative;
   word-wrap: break-word;
   background-clip: border-box;
   border: 1px solid transparent;
@@ -44,4 +45,13 @@
 
 .experience-card-previous-position {
   font-weight: 500;
+}
+
+/* obszar całej karty dla linku głównego */
+.experience-card-pseudo-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

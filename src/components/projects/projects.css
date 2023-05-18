@@ -3,6 +3,7 @@
 }
 
 .project-card {
+  position: relative;
   word-wrap: break-word;
   background-clip: border-box;
   border: 1px solid transparent;
@@ -38,15 +39,13 @@
   margin-top: 2px;
 }
 
-.project-card-position {
-  font-weight: 500;
-}
-
-.project-card-previous-position {
+.project-card-title {
   font-weight: 500;
 }
 
 .project-card-github-icon {
+  position: relative;
+  z-index: 1;
   fill: var(--app-text-main-color);
 }
 
@@ -55,6 +54,8 @@
 }
 
 .project-card-picture {
+  position: relative;
+  z-index: 1;
   width: 9rem;
   margin-top: 0.5rem;
   border: 3px solid transparent;
@@ -64,4 +65,14 @@
   word-wrap: break-word;
   background-clip: border-box;
   border: 3px solid rgb(106, 106, 168);
+}
+
+/* obszar całej karty dla linku głównego */
+.project-card-pseudo-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }

@@ -14,7 +14,8 @@ export interface IProjectCard {
 
 const ProjectCard = (props: IProjectCard) => {
   const [maxPicturesColumnHeight, setMaxPicturesColumnHeight] = useState<number | undefined>(undefined);
-  const ref = useRef<any>(null);
+  const picturesColumRef = useRef<any>(null);
+  const cardRef = useRef<any>(null);
   var badges = [];
   for (let ind = 0; ind < props.technologies.length; ind++) {
     badges.push(
@@ -25,43 +26,49 @@ const ProjectCard = (props: IProjectCard) => {
   }
 
   useEffect(() => {
-    if (ref.current) {
+    if (picturesColumRef.current) {
       const resizeObserver = new ResizeObserver(() => {
-        setMaxPicturesColumnHeight(ref.current.clientHeight);
+        setMaxPicturesColumnHeight(picturesColumRef.current.clientHeight);
       });
-      resizeObserver.observe(ref.current);
+      resizeObserver.observe(picturesColumRef.current);
       return () => resizeObserver.disconnect();
     }
   }, []);
 
   return (
-    <div className='project-card'>
-      <a className=' text-decoration-none text-head-color' target='_blank' rel='noopener noreferrer' href={props.href}>
-        <Row>
-          <Col sm={12} md={3} lg={4} xxl={3} style={{ maxHeight: maxPicturesColumnHeight, overflow: 'hidden' }}>
-            {props.photos.map((value, index) => (
-              <img key={index} alt={'project picture ' + index} src={value} className='project-card-picture' />
-            ))}
-          </Col>
-          <Col xs={12} md={9} lg={8} xxl={9} className='h-100' ref={ref}>
-            <p className='project-card-position m-0'>
+    <div className='project-card' ref={cardRef}>
+      <Row>
+        <Col sm={12} md={3} lg={4} xxl={3} style={{ maxHeight: maxPicturesColumnHeight, overflow: 'hidden' }}>
+          {props.photos.map((value, index) => (
+            <img key={index} alt={'project picture ' + index} src={value} className='project-card-picture' />
+          ))}
+        </Col>
+        <Col xs={12} md={9} lg={8} xxl={9} className='h-100' ref={picturesColumRef}>
+          <p className='project-card-title m-0'>
+            <a
+              className='text-decoration-none text-head-color'
+              target='_blank'
+              rel='noopener noreferrer'
+              href={props.href}
+            >
+              <span className='project-card-pseudo-block' />
               {props.name}
-              {props.githubHref && (
-                <a
-                  className='ms-3 project-card-github-icon'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  href={props.githubHref}
-                >
-                  <GithubCircle style={{ width: '1.25rem', height: '1.25rem' }} />
-                </a>
-              )}
-            </p>
-            <p className='text-sm mt-3'>{props.summary}</p>
-            <p>{badges}</p>
-          </Col>
-        </Row>
-      </a>
+            </a>
+            {props.githubHref && (
+              <a
+                className='ms-3 project-card-github-icon'
+                target='_blank'
+                rel='noopener noreferrer'
+                href={props.githubHref}
+              >
+                <GithubCircle style={{ width: '1.25rem', height: '1.25rem' }} />
+              </a>
+            )}
+          </p>
+          <p className='text-sm mt-3'>{props.summary}</p>
+          <p>{badges}</p>
+        </Col>
+      </Row>
     </div>
   );
 };
