@@ -3,12 +3,6 @@ import type { IProjectCard } from './project-card';
 import './projects.css';
 
 const Projects = () => {
-  const panRachunekDashboardPhoto = require('../../assets/pictures/pan-rachunek-dashboard.png');
-  const panRachunekPriceForUnitPhoto = require('../../assets/pictures/pan-rachunek-unit-price.png');
-  const panRachunekReportPhoto = require('../../assets/pictures/pan-rachunek-yearly-report.png');
-  const panRachunekSummaryConfigPhoto = require('../../assets/pictures/pan-rachunek-summary-config.png');
-  const panRachunekSummaryPhoto = require('../../assets/pictures/pan-rachunek-summary.png');
-
   const cards: IProjectCard[] = [
     {
       name: 'Portfolio maciejos.pl',
@@ -22,11 +16,11 @@ const Projects = () => {
     {
       name: 'Pan Rachunek',
       photos: [
-        panRachunekDashboardPhoto,
-        panRachunekReportPhoto,
-        panRachunekPriceForUnitPhoto,
-        panRachunekSummaryConfigPhoto,
-        panRachunekSummaryPhoto,
+        '/pan-rachunek/dashboard.png',
+        '/pan-rachunek/unit-price.png',
+        '/pan-rachunek/yearly-report.png',
+        '/pan-rachunek/summary-config.png',
+        '/pan-rachunek/summary.png',
       ],
       summary: `Pan Rachunek to wielowarstwowy system do zbierania danych związanych z wydatkami. Dzięki wgranym rachunkom użytkownicy mogą sprawdzać 
       wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na rozrywkę, zmianę trendu ceny jednostkowej produktu, czy ilość

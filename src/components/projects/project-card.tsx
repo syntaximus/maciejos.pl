@@ -5,7 +5,7 @@ import { GithubCircle } from '../../assets/icons/github-circle';
 import './projects.css';
 
 export interface IProjectCard {
-  photos: any[];
+  photos: string[];
   name: string;
   summary: string;
   technologies: string[];
@@ -17,6 +17,7 @@ const ProjectCard = (props: IProjectCard) => {
   const [maxPicturesColumnHeight, setMaxPicturesColumnHeight] = useState<number | undefined>(undefined);
   const picturesColumRef = useRef<any>(null);
   var badges = [];
+
   for (let ind = 0; ind < props.technologies.length; ind++) {
     badges.push(
       <Badge key={ind} className='me-3' pill>
@@ -41,13 +42,19 @@ const ProjectCard = (props: IProjectCard) => {
         <Col sm={12} md={3} lg={4} xxl={3} style={{ maxHeight: maxPicturesColumnHeight, overflow: 'hidden' }}>
           <Gallery>
             {props.photos.map((value, index) => (
-              <Item key={index} original={value} thumbnail={value} width='1920' height='1080'>
+              <Item
+                key={index}
+                original={'/static/pictures/original' + value}
+                thumbnail={'/static/pictures/thumbnail' + value}
+                width='3840'
+                height='2160'
+              >
                 {({ ref, open }) => (
                   <img
                     ref={ref as React.LegacyRef<HTMLImageElement>}
                     alt={'project picture ' + index}
                     onClick={open}
-                    src={value}
+                    src={'/static/pictures/thumbnail' + value}
                     className='project-card-picture'
                   />
                 )}
