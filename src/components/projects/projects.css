@@ -57,14 +57,16 @@
   position: relative;
   z-index: 1;
   width: 9rem;
-  margin-top: 0.5rem;
-  border: 2px solid transparent;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border: 3px solid rgba(211, 211, 211, 0.4);
+  border-radius: 4px;
 }
 
 .project-card-picture:hover {
   word-wrap: break-word;
   background-clip: border-box;
-  border: 2px solid var(--app-text-selection-color);
+  border: 3px solid var(--app-text-selection-color);
   border-radius: 4px;
 }
 

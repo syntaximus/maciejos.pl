@@ -1,11 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
 import { Badge, Col, Row } from 'react-bootstrap';
 import { Gallery, Item } from 'react-photoswipe-gallery';
 import { GithubCircle } from '../../assets/icons/github-circle';
 import './projects.css';
 
 export interface IProjectCard {
-  photos: string[];
+  pictures: IProjectCardPicture[];
   name: string;
   summary: string;
   technologies: string[];
@@ -13,9 +12,13 @@ export interface IProjectCard {
   githubHref?: string;
 }
 
+export interface IProjectCardPicture {
+  path: string;
+  width: number;
+  height: number;
+}
+
 const ProjectCard = (props: IProjectCard) => {
-  const [maxPicturesColumnHeight, setMaxPicturesColumnHeight] = useState<number | undefined>(undefined);
-  const picturesColumRef = useRef<any>(null);
   var badges = [];
 
   for (let ind = 0; ind < props.technologies.length; ind++) {
@@ -26,35 +29,32 @@ const ProjectCard = (props: IProjectCard) => {
     );
   }
 
-  useEffect(() => {
-    if (picturesColumRef.current) {
-      const resizeObserver = new ResizeObserver(() => {
-        setMaxPicturesColumnHeight(picturesColumRef.current.clientHeight);
-      });
-      resizeObserver.observe(picturesColumRef.current);
-      return () => resizeObserver.disconnect();
-    }
-  }, []);
-
   return (
     <div className='project-card'>
       <Row>
-        <Col sm={12} md={3} lg={4} xxl={3} style={{ maxHeight: maxPicturesColumnHeight, overflow: 'hidden' }}>
+        <Col
+          className='pt-1'
+          xs={{ order: 2, span: 12 }}
+          md={{ order: 1, span: 3 }}
+          lg={{ order: 1, span: 4 }}
+          xxl={{ order: 1, span: 3 }}
+          style={{ maxHeight: '370px', overflow: 'hidden' }}
+        >
           <Gallery>
-            {props.photos.map((value, index) => (
+            {props.pictures.map((value, index) => (
               <Item
                 key={index}
-                original={'/static/pictures/original' + value}
-                thumbnail={'/static/pictures/thumbnail' + value}
-                width='3840'
-                height='2160'
+                original={'/static/pictures/original' + value.path}
+                thumbnail={'/static/pictures/thumbnail' + value.path}
+                width={value.width}
+                height={value.height}
               >
                 {({ ref, open }) => (
                   <img
                     ref={ref as React.LegacyRef<HTMLImageElement>}
                     alt={'project picture ' + index}
                     onClick={open}
-                    src={'/static/pictures/thumbnail' + value}
+                    src={'/static/pictures/thumbnail' + value.path}
                     className='project-card-picture'
                   />
                 )}
@@ -62,8 +62,14 @@ const ProjectCard = (props: IProjectCard) => {
             ))}
           </Gallery>
         </Col>
-        <Col xs={12} md={9} lg={8} xxl={9} className='h-100' ref={picturesColumRef}>
-          <p className='project-card-title m-0'>
+        <Col
+          className='pt-1'
+          xs={{ order: 1, span: 12 }}
+          md={{ order: 2, span: 9 }}
+          lg={{ order: 2, span: 8 }}
+          xxl={{ order: 2, span: 9 }}
+        >
+          <p className='project-card-title'>
             <a className='text-decoration-none' target='_blank' rel='noopener noreferrer' href={props.href}>
               <span className='project-card-pseudo-block' />
               {props.name}

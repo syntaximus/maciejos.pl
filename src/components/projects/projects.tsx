@@ -6,7 +6,7 @@ const Projects = () => {
   const cards: IProjectCard[] = [
     {
       name: 'Portfolio maciejos.pl',
-      photos: [],
+      pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401 }],
       summary: `Jest to aktualnie wyświetlana strona. Do budowy tej aplikacji SPA wykorzystałem React 18 i Bootstrap 5.
       Aplikacja jest skonteneryzowana za pomocą dockerowych obrazów node.js oraz nginx i jest orkiestrowana przez Kubernetes.`,
       technologies: ['Kubernetes', 'React', 'Bootstrap', 'Typescript'],
@@ -15,12 +15,12 @@ const Projects = () => {
     },
     {
       name: 'Pan Rachunek',
-      photos: [
-        '/pan-rachunek/dashboard.png',
-        '/pan-rachunek/unit-price.png',
-        '/pan-rachunek/yearly-report.png',
-        '/pan-rachunek/summary-config.png',
-        '/pan-rachunek/summary.png',
+      pictures: [
+        { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/yearly-report.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/summary-config.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/summary.png', width: 3840, height: 2160 },
       ],
       summary: `Pan Rachunek to wielowarstwowy system do zbierania danych związanych z wydatkami. Dzięki wgranym rachunkom użytkownicy mogą sprawdzać 
       wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na rozrywkę, zmianę trendu ceny jednostkowej produktu, czy ilość
