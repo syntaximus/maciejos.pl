@@ -3,7 +3,7 @@ import './experience.css';
 
 export interface IExperienceCard {
   duration: string;
-  summary: string;
+  summary: JSX.Element;
   technologies: string[];
   postion: string;
   previousPositions?: string[];
@@ -28,7 +28,7 @@ const ExperienceCard = (props: IExperienceCard) => {
         </Col>
         <Col xs={12} md={9} lg={8} xxl={9}>
           <p className='experience-card-position m-0'>
-            <a className=' text-decoration-none' target='_blank' rel='noopener noreferrer' href={props.href}>
+            <a target='_blank' rel='noopener noreferrer' href={props.href}>
               <span className='experience-card-pseudo-block' />
               {props.postion} | {props.location}
             </a>

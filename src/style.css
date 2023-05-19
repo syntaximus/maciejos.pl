@@ -5,6 +5,7 @@ body {
 
 a {
   color: var(--app-text-highlight-color);
+  text-decoration: none;
 }
 
 a:hover {

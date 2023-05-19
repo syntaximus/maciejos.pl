@@ -6,7 +6,7 @@ import './projects.css';
 export interface IProjectCard {
   pictures: IProjectCardPicture[];
   name: string;
-  summary: string;
+  summary: JSX.Element;
   technologies: string[];
   href: string;
   githubHref?: string;
@@ -70,7 +70,7 @@ const ProjectCard = (props: IProjectCard) => {
           xxl={{ order: 2, span: 9 }}
         >
           <p className='project-card-title'>
-            <a className='text-decoration-none' target='_blank' rel='noopener noreferrer' href={props.href}>
+            <a target='_blank' rel='noopener noreferrer' href={props.href}>
               <span className='project-card-pseudo-block' />
               {props.name}
             </a>

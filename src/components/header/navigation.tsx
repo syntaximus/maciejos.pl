@@ -7,24 +7,24 @@ const Navigation = () => {
     <Container>
       <ul className='navigation-list'>
         <li>
-          <a className='text-decoration-none text-navigation' data-to-scrollspy-id='about' href='#about'>
+          <a className='text-navigation' data-to-scrollspy-id='about' href='#about'>
             {navigationIndicator}O mnie
           </a>
         </li>
         <li>
-          <a className='text-decoration-none text-navigation' data-to-scrollspy-id='experience' href='#experience'>
+          <a className='text-navigation' data-to-scrollspy-id='experience' href='#experience'>
             {navigationIndicator}
             Doświadczenie
           </a>
         </li>
         <li>
-          <a className='text-decoration-none text-navigation' data-to-scrollspy-id='skills' href='#skills'>
+          <a className='text-navigation' data-to-scrollspy-id='skills' href='#skills'>
             {navigationIndicator}
             Technologie
           </a>
         </li>
         <li>
-          <a className='text-decoration-none text-navigation' data-to-scrollspy-id='projects' href='#projects'>
+          <a className='text-navigation' data-to-scrollspy-id='projects' href='#projects'>
             {navigationIndicator}
             Projekty
           </a>

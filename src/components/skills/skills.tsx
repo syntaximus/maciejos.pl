@@ -127,6 +127,9 @@ const Skills = () => {
     'Visual Studio',
     'VS Code',
     'Jenkins',
+    'Yarn',
+    'Node.js',
+    'ILSpy',
   ];
 
   return (

@@ -51,3 +51,8 @@
   left: 0;
   right: 0;
 }
+
+.experience-card-link {
+  position: relative;
+  z-index: 1;
+}
