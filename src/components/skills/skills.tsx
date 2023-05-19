@@ -20,7 +20,6 @@ import {
 } from '../../assets/logos/skills';
 
 const Skills = () => {
-  var elem = 'Technologie';
   const skillImageWidth = '2.5rem';
   const skillImageHeight = '2.5rem';
   const languages: ISkillCard[] = [
@@ -132,10 +131,10 @@ const Skills = () => {
 
   return (
     <div id='skills' className='skills'>
-      <h3>{elem}</h3>
-      <p>Moja subiektywna ocena umiejętności w danych obszarach:</p>
+      <h4 className='text-highlight-color'>Technologie</h4>
+      <p>Moja subiektywna ocena umiejętności w danych obszarach</p>
       <div className='my-3 skills-card'>
-        <h5>Języki</h5>
+        <h5 className='text-highlight-color'>Języki</h5>
         <Row>
           {languages.map((value, index) => (
             <Col key={index} xs={12}>
@@ -145,7 +144,7 @@ const Skills = () => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5>Backend</h5>
+        <h5 className='text-highlight-color'>Backend</h5>
         <Row>
           {backendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -155,7 +154,7 @@ const Skills = () => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5>Frontend</h5>
+        <h5 className='text-highlight-color'>Frontend</h5>
         <Row>
           {frontendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -165,7 +164,7 @@ const Skills = () => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5>Infrastruktura</h5>
+        <h5 className='text-highlight-color'>Infrastruktura</h5>
         <Row>
           {infrastructureSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -175,7 +174,7 @@ const Skills = () => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5>Inne</h5>
+        <h5 className='text-highlight-color'>Inne</h5>
         <p>Mam również doświadczenie z następującymi technologiami i narzędziami</p>
         <Row>
           {others.map((value, index) => (

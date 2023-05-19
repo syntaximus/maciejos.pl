@@ -20,7 +20,7 @@ const ProjectCard = (props: IProjectCard) => {
 
   for (let ind = 0; ind < props.technologies.length; ind++) {
     badges.push(
-      <Badge key={ind} className='me-3' pill>
+      <Badge key={ind} className='me-2' pill>
         {props.technologies[ind]}
       </Badge>
     );
@@ -64,18 +64,13 @@ const ProjectCard = (props: IProjectCard) => {
         </Col>
         <Col xs={12} md={9} lg={8} xxl={9} className='h-100' ref={picturesColumRef}>
           <p className='project-card-title m-0'>
-            <a
-              className='text-decoration-none text-head-color'
-              target='_blank'
-              rel='noopener noreferrer'
-              href={props.href}
-            >
+            <a className='text-decoration-none' target='_blank' rel='noopener noreferrer' href={props.href}>
               <span className='project-card-pseudo-block' />
               {props.name}
             </a>
             {props.githubHref && (
               <a
-                className='ms-3 project-card-github-icon'
+                className='ms-3 project-card-github-icon  text-highlight-on-hover-color '
                 target='_blank'
                 rel='noopener noreferrer'
                 href={props.githubHref}

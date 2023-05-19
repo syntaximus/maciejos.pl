@@ -60,7 +60,7 @@ const Projects = () => {
   }
   return (
     <div id='projects' className='projects'>
-      <h3>Projekty</h3>
+      <h4 className='text-highlight-color'>Projekty</h4>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );

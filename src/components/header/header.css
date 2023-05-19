@@ -23,12 +23,13 @@
 .text-navigation:hover {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--app-text-main-color);
+  color: var(--app-text-highlight-color);
 }
 
 .active-scroll-spy {
   font-size: 0.95rem;
   font-weight: 700;
+  color: var(--app-text-highlight-color);
 }
 
 .navigation-line {
@@ -43,15 +44,16 @@
 }
 
 .active-scroll-spy .navigation-line {
+  background-color: var(--app-text-highlight-color);
   width: 4rem;
 }
 
 .text-navigation:hover .navigation-line {
+  background-color: var(--app-text-highlight-color);
   width: 4rem;
 }
 
 .navigation-list {
-  position: relative;
   list-style: none;
   margin-left: 0;
   padding-left: 0;

@@ -3,7 +3,6 @@ import type { IExperienceCard } from './experience-card';
 import './experience.css';
 
 const Experience = () => {
-  var elem = 'Doświadczenie';
   const cards: IExperienceCard[] = [
     {
       duration: '2022 - obecnie',
@@ -75,7 +74,7 @@ const Experience = () => {
   }
   return (
     <div id='experience' className='experience'>
-      <h3>{elem}</h3>
+      <h4 className='text-highlight-color'>Doświadczenie</h4>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );

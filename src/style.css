@@ -3,6 +3,14 @@ body {
   color: var(--app-text-main-color);
 }
 
+a {
+  color: var(--app-text-highlight-color);
+}
+
+a:hover {
+  color: var(--app-text-selection-color);
+}
+
 .text-xxl {
   font-size: 3rem;
   line-height: 1;
@@ -18,10 +26,33 @@ body {
   line-height: 1.25rem;
 }
 
-.text-head-color {
+.text-normal-color {
   color: var(--app-text-main-color);
 }
 
-.text-head-color:hover {
+.text-normal-color:hover {
   color: var(--app-text-main-color);
+}
+
+.text-highlight-on-hover-color {
+  color: var(--app-text-main-color);
+}
+
+.text-highlight-on-hover-color:hover {
+  color: var(--app-text-highlight-color);
+}
+
+.text-highlight-color {
+  color: var(--app-text-highlight-color);
+}
+
+.text-highlight-color:hover {
+  color: var(--app-text-highlight-color);
+}
+
+.badge {
+  background-color: var(--app-badge-background-color) !important;
+  color: var(--app-text-selection-color);
+  font-weight: 500;
+  font-size: 0.8rem;
 }

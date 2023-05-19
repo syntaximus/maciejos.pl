@@ -5,18 +5,33 @@ const Socials = () => (
   <Container>
     <Row>
       <Col xs='auto' className='px-2'>
-        <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/syntaximus/'>
-          <Linkedin style={{ width: 30, height: 30, color: 'var(--app-text-main-color)' }} />
+        <a
+          className='text-highlight-on-hover-color'
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://www.linkedin.com/in/syntaximus/'
+        >
+          <Linkedin style={{ width: 30, height: 30 }} />
         </a>
       </Col>
       <Col xs='auto' className='px-2'>
-        <a target='_blank' rel='noopener noreferrer' href='https://github.com/syntaximus'>
-          <Github style={{ width: 30, height: 30, color: 'var(--app-text-main-color)' }} />
+        <a
+          className='text-highlight-on-hover-color'
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://github.com/syntaximus'
+        >
+          <Github style={{ width: 30, height: 30 }} />
         </a>
       </Col>
       <Col xs='auto' className='px-2'>
-        <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/maciejjos'>
-          <Facebook style={{ width: 30, height: 30, color: 'var(--app-text-main-color)' }} />
+        <a
+          className='text-highlight-on-hover-color'
+          target='_blank'
+          rel='noopener noreferrer'
+          href='https://www.facebook.com/maciejjos'
+        >
+          <Facebook style={{ width: 30, height: 30 }} />
         </a>
       </Col>
     </Row>

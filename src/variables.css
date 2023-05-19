@@ -1,8 +1,7 @@
 :root {
   --app-background-color: rgb(0, 27, 33);
-  --app-text-head-color: rgb(188, 197, 210);
-  --app-text-main-color: rgb(188, 197, 210);
-  --app-main-color: #00aa5b;
-  --app-secondary-color: #145638;
-  --app-elements-hover-color: rgb(101 103 107 / 10%);
+  --app-text-main-color: rgba(188, 197, 210, 0.8);
+  --app-text-highlight-color: white;
+  --app-text-selection-color: #f0db4f;
+  --app-badge-background-color: #f0db4f49;
 }
