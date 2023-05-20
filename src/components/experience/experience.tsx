@@ -48,10 +48,10 @@ const Experience = () => {
       previousPositions: ['Programista .NET'],
       summary: (
         <span>
-          W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową z których
-          korzystacją pacjenci, lekarze i pracownicy placówek medycznych w całej Polsce. Oprócz tworzenia kodu
-          aplikacyjnego, pełniłem również rolę programisty SQL i dbałem o tworzenie wydajnego kodu SQL w rozwiązaniach.
-          Przeprowadziłem wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych.
+          W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową z których korzystają
+          pacjenci, lekarze i pracownicy placówek medycznych w całej Polsce. Oprócz tworzenia kodu aplikacyjnego,
+          pełniłem również rolę programisty SQL i dbałem o tworzenie wydajnego kodu SQL w rozwiązaniach. Przeprowadziłem
+          wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych.
         </span>
       ),
       technologies: [
