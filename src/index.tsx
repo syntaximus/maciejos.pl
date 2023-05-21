@@ -5,6 +5,7 @@ import { Layout } from './components';
 import 'photoswipe/dist/photoswipe.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
+import './style-perspective.css';
 import './variables.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

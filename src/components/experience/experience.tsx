@@ -2,7 +2,11 @@ import ExperienceCard from './experience-card';
 import type { IExperienceCard } from './experience-card';
 import './experience.css';
 
-const Experience = () => {
+export interface IExperienceProps {
+  cinematicMode: boolean;
+}
+
+const Experience = (props: IExperienceProps) => {
   const cards: IExperienceCard[] = [
     {
       duration: '2022 - obecnie',
@@ -97,7 +101,7 @@ const Experience = () => {
   }
   return (
     <div id='experience' className='experience'>
-      <h4 className='text-highlight-color'>Doświadczenie</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Doświadczenie</h4>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );

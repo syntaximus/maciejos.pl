@@ -2,7 +2,11 @@ import ProjectCard from './project-card';
 import type { IProjectCard } from './project-card';
 import './projects.css';
 
-const Projects = () => {
+export interface IProjectsProps {
+  cinematicMode: boolean;
+}
+
+const Projects = (props: IProjectsProps) => {
   const cards: IProjectCard[] = [
     {
       name: 'Portfolio maciejos.pl',
@@ -104,7 +108,7 @@ const Projects = () => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className='text-highlight-color'>Projekty</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Projekty</h4>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );

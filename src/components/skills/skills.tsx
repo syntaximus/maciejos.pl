@@ -19,7 +19,11 @@ import {
   Iis,
 } from '../../assets/logos/skills';
 
-const Skills = () => {
+export interface ISkillsProps {
+  cinematicMode: boolean;
+}
+
+const Skills = (props: ISkillsProps) => {
   const skillImageWidth = '2.5rem';
   const skillImageHeight = '2.5rem';
   const languages: ISkillCard[] = [
@@ -134,7 +138,7 @@ const Skills = () => {
 
   return (
     <div id='skills' className='skills'>
-      <h4 className='text-highlight-color'>Technologie</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Technologie</h4>
       <p>Moja subiektywna ocena umiejętności w danych obszarach</p>
       <div className='my-3 skills-card'>
         <h5 className='text-highlight-color'>Języki</h5>
