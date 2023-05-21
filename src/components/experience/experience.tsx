@@ -97,7 +97,7 @@ const Experience = () => {
   }
   return (
     <div id='experience' className='experience'>
-      <h4 className='text-highlight-color'>Doświadczenie</h4>
+      <h4 className='text-highlight-color section-header'>Doświadczenie</h4>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );

@@ -2,7 +2,7 @@ import './about.css';
 
 const About = () => (
   <div id='about' className='about'>
-    <h4 className='text-highlight-color'>O mnie</h4>
+    <h4 className='text-highlight-color section-header'>O mnie</h4>
     <p>
       Od małego interesuję się technologiami. Dzięki zacięciu matematycznemu i informatycznemu ukończyłem informatykę na
       wydziale{' '}

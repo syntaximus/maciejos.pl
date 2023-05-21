@@ -104,7 +104,7 @@ const Projects = () => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className='text-highlight-color'>Projekty</h4>
+      <h4 className='text-highlight-color section-header'>Projekty</h4>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );
