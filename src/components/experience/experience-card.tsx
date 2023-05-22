@@ -29,7 +29,7 @@ const ExperienceCard = (props: IExperienceCard) => {
         <Col xs={12} md={9} lg={8} xxl={9}>
           <p className='experience-card-position m-0'>
             <a target='_blank' rel='noopener noreferrer' href={props.href}>
-              <span className='experience-card-pseudo-block' />
+              <span className='experience-card-pseudo-block d-none d-lg-block' />
               {props.postion} | {props.location}
             </a>
           </p>
