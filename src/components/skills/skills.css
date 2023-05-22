@@ -3,8 +3,9 @@
 }
 
 .skills-card {
+  box-shadow: 0px 1px 5px 3px var(--app-background-card-color);
   word-wrap: break-word;
-  background-color: rgb(0, 17, 23);
+  background-color: var(--app-background-card-color);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.175);
   border-radius: 1rem;

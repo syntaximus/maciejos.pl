@@ -38,7 +38,7 @@ const ProjectCard = (props: IProjectCard) => {
           md={{ order: 1, span: 3 }}
           lg={{ order: 1, span: 4 }}
           xxl={{ order: 1, span: 3 }}
-          style={{ maxHeight: '370px', overflow: 'hidden' }}
+          style={{ maxHeight: '365px', overflow: 'hidden' }}
         >
           <Gallery>
             {props.pictures.map((value, index) => (
@@ -71,7 +71,7 @@ const ProjectCard = (props: IProjectCard) => {
         >
           <p className='project-card-title'>
             <a target='_blank' rel='noopener noreferrer' href={props.href}>
-              <span className='project-card-pseudo-block' />
+              <span className='project-card-pseudo-block d-none d-lg-block' />
               {props.name}
             </a>
             {props.githubHref && (
