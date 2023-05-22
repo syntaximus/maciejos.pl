@@ -62,3 +62,8 @@
 .navigation-list li {
   margin-top: 0.4rem;
 }
+
+.perspective-switch {
+  position: absolute;
+  margin-top: 3rem;
+}
