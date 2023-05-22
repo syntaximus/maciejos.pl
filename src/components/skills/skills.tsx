@@ -182,7 +182,7 @@ const Skills = (props: ISkillsProps) => {
       </div>
       <div className='my-3 skills-card'>
         <h5 className='text-highlight-color'>Inne</h5>
-        <p>Mam również doświadczenie z następującymi technologiami i narzędziami</p>
+        <p>Posiadam również doświadczenie z następującymi technologiami i narzędziami</p>
         <Row>
           {others.map((value, index) => (
             <Col key={index} xs={6} sm={4} lg={6} xxl={4}>
