@@ -2,7 +2,11 @@ import ProjectCard from './project-card';
 import type { IProjectCard } from './project-card';
 import './projects.css';
 
-const Projects = () => {
+export interface IProjectsProps {
+  cinematicMode: boolean;
+}
+
+const Projects = (props: IProjectsProps) => {
   const cards: IProjectCard[] = [
     {
       name: 'Portfolio maciejos.pl',
@@ -50,8 +54,9 @@ const Projects = () => {
           użytkownicy mogą sprawdzać wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na
           transport, zmianę trendu ceny jednostkowej produktu, czy ilość litrów kupionej wody w danym roku. Aplikacja
           wykorzystuje uczenie maszynowe do odpowiedniego kategoryzowania elementów paragonu wczytanego ze zdjęcia.
-          Użytkownicy mogą wprowadzać operacje cykliczne, odpowiednio grupować dane wydatki, a także udostępniać swoje
-          podsumowania wydatków innym. System raportowy został zintegrowany z mechanizmem{' '}
+          Użytkownicy mogą wprowadzać operacje cykliczne, odpowiednio grupować dane wydatki,{' '}
+          <span className='text-nowrap'>a także</span> udostępniać swoje podsumowania wydatków innym. System raportowy
+          został zintegrowany z mechanizmem{' '}
           <a
             className='project-card-link'
             target='_blank'
@@ -62,7 +67,8 @@ const Projects = () => {
           </a>
           , dzięki czemu raporty i statystyki są bardziej responsywne i umożliwiają wiele sposobów filtrowania
           potrzebnych danych. W aplikacji wprowadziłem zabezpieczenia takie jak uwierzytelnienie dwuskładnikowe (2FA)
-          czy integracja warstwy frontendowej i backendowej z serwerem uwierzytelniającym{' '}
+          czy integracja warstwy frontendowej <span className='text-nowrap'>i backendowej</span> z serwerem
+          uwierzytelniającym{' '}
           <a
             className='project-card-link'
             target='_blank'
@@ -104,7 +110,7 @@ const Projects = () => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className='text-highlight-color section-header'>Projekty</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Projekty</h4>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );

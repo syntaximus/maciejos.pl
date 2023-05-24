@@ -2,7 +2,11 @@ import ExperienceCard from './experience-card';
 import type { IExperienceCard } from './experience-card';
 import './experience.css';
 
-const Experience = () => {
+export interface IExperienceProps {
+  cinematicMode: boolean;
+}
+
+const Experience = (props: IExperienceProps) => {
   const cards: IExperienceCard[] = [
     {
       duration: '2022 - obecnie',
@@ -10,9 +14,11 @@ const Experience = () => {
       postion: 'Twórca',
       summary: (
         <span>
-          Zaprojektowałem i zaimplementowałem wielowarstwowy system do zbierania danych związanych z wydatkami
-          użytkowników. Aplikacja wykorzystuje uczenie maszynowe do rozpoznawania produktów ze zdjęć paragonów. W
-          architekturze rozwiązania wykorzystałem serwer uwierzytelniający zgodny z OAuth 2.0 -{' '}
+          Zaprojektowałem i zaimplementowałem wielowarstwowy system <span className='text-nowrap'>do zbierania</span>{' '}
+          danych związanych z wydatkami użytkowników. Aplikacja wykorzystuje uczenie maszynowe w celu rozpoznawania
+          produktów <span className='text-nowrap'>ze zdjęć</span> paragonów.{' '}
+          <span className='text-nowrap'>W architekturze</span> rozwiązania wykorzystałem serwer uwierzytelniający zgodny
+          z OAuth 2.0 -{' '}
           <a
             className='experience-card-link'
             target='_blank'
@@ -48,9 +54,12 @@ const Experience = () => {
       previousPositions: ['Programista .NET'],
       summary: (
         <span>
-          W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową z których korzystają
-          pacjenci, lekarze i pracownicy placówek medycznych w całej Polsce. Oprócz tworzenia kodu aplikacyjnego,
-          pełniłem również rolę programisty SQL i dbałem o tworzenie wydajnego kodu SQL w rozwiązaniach. Przeprowadziłem
+          W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową,{' '}
+          <span className='text-nowrap'>z których</span>
+          korzystają pacjenci, lekarze <span className='text-nowrap'>i pracownicy</span> placówek medycznych{' '}
+          <span className='text-nowrap'>w całej</span>
+          Polsce. Oprócz tworzenia kodu aplikacyjnego, pełniłem również rolę programisty SQL{' '}
+          <span className='text-nowrap'>i dbałem</span> o tworzenie wydajnego kodu SQL w rozwiązaniach. Przeprowadziłem
           wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych.
         </span>
       ),
@@ -97,7 +106,7 @@ const Experience = () => {
   }
   return (
     <div id='experience' className='experience'>
-      <h4 className='text-highlight-color section-header'>Doświadczenie</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Doświadczenie</h4>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );
