@@ -26,10 +26,6 @@ a:hover {
   line-height: 1.25rem;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 .text-normal-color {
   color: var(--app-text-main-color);
 }

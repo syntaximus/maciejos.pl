@@ -170,7 +170,7 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>Infrastruktura</h5>
+        <h5 className='text-highlight-color'>DevOps</h5>
         <Row>
           {infrastructureSkills.map((value, index) => (
             <Col key={index} xs={12}>

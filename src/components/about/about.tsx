@@ -9,7 +9,8 @@ const About = (props: IAboutProps) => (
     <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>O mnie</h4>
     <p className='text-justify'>
       Od najmłodszych lat interesuję się technologiami. Dzięki zacięciu matematycznemu{' '}
-      <span className='text-nowrap'>i informatycznemu</span>, ukończyłem informatykę na wydziale{' '}
+      <span className='text-nowrap'>i informatycznemu</span>, ukończyłem informatykę{' '}
+      <span className='text-nowrap'>na wydziale</span>{' '}
       <a target='_blank' rel='noopener noreferrer' href='https://ww2.mini.pw.edu.pl/'>
         Matematyki <span className='text-nowrap'>i Nauk</span> Informacyjnych Politechniki Warszawskiej
       </a>
@@ -17,12 +18,13 @@ const About = (props: IAboutProps) => (
       daje mi dużo satysfakcji.
     </p>
     <p className='text-justify'>
-      Zawodowo zajmuję się tworzeniem aplikacji webowych w środowisku .NET zarówno{' '}
+      Zawodowo zajmuję się tworzeniem aplikacji webowych <span className='text-nowrap'>w środowisku</span> .NET zarówno{' '}
       <span className='text-nowrap'>od strony</span> backendowej,{' '}
-      <span className='text-nowrap'>jak i frontendowej</span>. Zrealizowałem wiele projektów, z których korzystają setki
-      tysięcy ludzi. Skupiam się na optymalizacji procesów <span className='text-nowrap'>i tworzeniu</span> wydajnego
-      kodu. Cyberbezpieczeństwo to mój konik <span className='text-nowrap'>i dbam</span> o zachowanie wysokich
-      standardów w tej dziedzinie w swoich rozwiązaniach.
+      <span className='text-nowrap'>jak i frontendowej</span>. Zrealizowałem wiele projektów,{' '}
+      <span className='text-nowrap'>z których</span> korzystają setki tysięcy ludzi. Skupiam się{' '}
+      <span className='text-nowrap'>na optymalizacji</span> procesów <span className='text-nowrap'>i tworzeniu</span>{' '}
+      wydajnego kodu. Cyberbezpieczeństwo to mój konik <span className='text-nowrap'>i dbam</span> o zachowanie wysokich
+      standardów <span className='text-nowrap'>w tej</span> dziedzinie w swoich rozwiązaniach.
     </p>
     <p className='text-justify'>
       W swoich projektach stawiam na konteneryzację i administruję własnym klastrem{' '}
