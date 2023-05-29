@@ -19,3 +19,23 @@ spec:
                 name: maciejos
                 port:
                   number: 8000
+    - host: maciejos.pl
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: maciejos
+                port:
+                  number: 8000
+    - host: www.maciejos.pl
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: maciejos
+                port:
+                  number: 8000

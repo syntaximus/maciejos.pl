@@ -9,7 +9,7 @@ kubectl apply -f C:\Users\synta\source\repos\maciejos\kubernetes\maciejos-deploy
 kubectl apply -f C:\Users\synta\source\repos\maciejos\kubernetes\maciejos-service.yaml
 
 #4. restart deploymentu
-kubectl rollout restart deployment maciejos -n=pan-rachunek
+kubectl rollout restart deployment maciejos -n=maciejos
 
 #5. podegranie ingress
 kubectl apply -f C:\Users\synta\source\repos\maciejos\kubernetes\maciejos-ingress.yaml

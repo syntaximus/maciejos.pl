@@ -1,35 +1,36 @@
+import { Container } from 'react-bootstrap';
+
 const Navigation = () => {
-  var elem = 'Navigation section';
+  const navigationIndicator = <span className='navigation-line' />;
+
   return (
-    <div className='navigation'>
-      <ul>
+    <Container>
+      <ul className='navigation-list'>
         <li>
-          <a data-to-scrollspy-id='about' href='#about'>
-            About
+          <a className='text-navigation' data-to-scrollspy-id='about' href='#about'>
+            {navigationIndicator}O mnie
           </a>
         </li>
         <li>
-          <a data-to-scrollspy-id='education' href='#education'>
-            Education
+          <a className='text-navigation' data-to-scrollspy-id='experience' href='#experience'>
+            {navigationIndicator}
+            Doświadczenie
           </a>
         </li>
         <li>
-          <a data-to-scrollspy-id='experience' href='#experience'>
-            Experience
+          <a className='text-navigation' data-to-scrollspy-id='skills' href='#skills'>
+            {navigationIndicator}
+            Technologie
           </a>
         </li>
         <li>
-          <a data-to-scrollspy-id='projects' href='#projects'>
-            Projects
-          </a>
-        </li>
-        <li>
-          <a data-to-scrollspy-id='skills' href='#skills'>
-            Skills
+          <a className='text-navigation' data-to-scrollspy-id='projects' href='#projects'>
+            {navigationIndicator}
+            Projekty
           </a>
         </li>
       </ul>
-    </div>
+    </Container>
   );
 };
 

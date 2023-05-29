@@ -3,14 +3,17 @@ body {
   color: var(--app-text-main-color);
 }
 
-.active-scroll-spy {
-  background-color: yellowgreen !important;
-  border-radius: 15px !important;
+a {
+  color: var(--app-text-highlight-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--app-text-selection-color);
 }
 
 .text-xxl {
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 2.25rem;
 }
 
 .text-xl {
@@ -23,10 +26,46 @@ body {
   line-height: 1.25rem;
 }
 
-.text-head-color {
+.text-normal-color {
   color: var(--app-text-main-color);
 }
 
-.text-head-color:hover {
+.text-normal-color:hover {
   color: var(--app-text-main-color);
+}
+
+.text-highlight-on-hover-color {
+  color: var(--app-text-main-color);
+}
+
+.text-highlight-on-hover-color:hover {
+  color: var(--app-text-highlight-color);
+}
+
+.text-highlight-color {
+  color: var(--app-text-highlight-color);
+}
+
+.text-highlight-color:hover {
+  color: var(--app-text-highlight-color);
+}
+
+.badge {
+  background-color: var(--app-badge-background-color) !important;
+  color: var(--app-text-selection-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+@media all and not (min-width: 992px) {
+  .section-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--app-background-color);
+    opacity: 0.9;
+    z-index: 2;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
