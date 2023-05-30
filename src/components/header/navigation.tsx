@@ -5,7 +5,7 @@ const Navigation = () => {
 
   return (
     <Container>
-      <ul className='navigation-list'>
+      <ul className='navigation-list mt-5'>
         <li>
           <a className='text-navigation' data-to-scrollspy-id='about' href='#about'>
             {navigationIndicator}O mnie

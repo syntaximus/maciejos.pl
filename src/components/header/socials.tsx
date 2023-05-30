@@ -3,7 +3,7 @@ import { Github, Linkedin, Facebook } from '../../assets/icons';
 
 const Socials = () => (
   <Container>
-    <Row>
+    <Row className='mt-3'>
       <Col xs='auto' className='px-2'>
         <a
           className='text-highlight-on-hover-color'
