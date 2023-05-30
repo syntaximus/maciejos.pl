@@ -67,3 +67,12 @@
   position: absolute;
   margin-top: 3rem;
 }
+
+.language-panel {
+  position: absolute;
+  margin-top: -3rem;
+}
+
+.selected-language {
+  color: var(--app-text-highlight-color);
+}

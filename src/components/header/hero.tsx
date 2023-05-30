@@ -2,7 +2,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { Mail, Phone } from '../../assets/icons';
 
 const Hero = () => {
-  console.log(process.env);
   const showPhone = process.env.REACT_APP_SHOW_PHONE_NUMBER === 'true';
   return (
     <Container>

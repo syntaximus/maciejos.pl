@@ -4,6 +4,7 @@ import Hero from './hero';
 import Navigation from './navigation';
 import Socials from './socials';
 import { Form } from 'react-bootstrap';
+import Language from './language';
 
 export interface IHeaderProps {
   setCinematicMode: Dispatch<SetStateAction<boolean>>;
@@ -14,6 +15,9 @@ const Header = (props: IHeaderProps) => (
   <header className='sticky-top'>
     <div className='header d-flex flex-column justify-content-sm-between'>
       <div>
+        <div className='language-panel'>
+          <Language />
+        </div>
         <Hero />
         {!props.cinematicMode && (
           <>
