@@ -9,7 +9,7 @@ const Socials = () => (
           className='text-highlight-on-hover-color'
           target='_blank'
           rel='noopener noreferrer'
-          href='https://www.linkedin.com/in/syntaximus/'
+          href='https://www.linkedin.com/in/maciejos/'
         >
           <Linkedin style={{ width: 30, height: 30 }} />
         </a>
