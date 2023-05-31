@@ -56,9 +56,9 @@
 }
 
 .project-card-picture {
+  cursor: pointer;
   position: relative;
   z-index: 1;
-  width: 9rem;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   border: 3px solid rgba(211, 211, 211, 0.4);
