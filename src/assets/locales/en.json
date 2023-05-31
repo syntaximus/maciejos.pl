@@ -1,0 +1,70 @@
+{
+  "translation": {
+    "header": {
+      "hero": {
+        "job-position": ".NET Developer",
+        "description": "I design, implement, and deploy web solutions that make people's lives easier."
+      },
+      "navigation": {
+        "about-me": "About me",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects"
+      },
+      "perspective-view": "Perspective view"
+    },
+    "about": {
+      "section": "About me",
+      "first-paragraph": "From a young age, I have been interested in technology. With a strong inclination towards mathematics and computer science, I graduated in Computer Science from the <1>Faculty of Mathematics and Information Science at the Warsaw University of Technology</1>. Programming is my passion, and implementing new and interesting solutions brings me great satisfaction.",
+      "second-paragraph": "Professionally, I specialize in developing web applications in the .NET environment, both on the backend and frontend. I have completed numerous projects that are used by hundreds of thousands of people. I focus on process optimization and creating efficient code. Cybersecurity is also a keen interest of mine, and I strive to maintain high standards in this field within my solutions.",
+      "third-paragraph": "In my projects, I prioritize containerization and manage my own <0>Kubernetes</0> cluster. Currently, I am working on creating a web service called <1>Pan Rachunek</1>, which enables expense management.",
+      "fourth-paragraph": "When I'm not at the computer, I dedicate my time to my hobby, which is triathlon, specifically training for the full Ironman distance."
+    },
+    "experience": {
+      "section": "Experience",
+      "pan-rachunek": {
+        "duration": "2022 - now",
+        "location": "Pan Rachunek",
+        "position": "Creator",
+        "description": "I have designed and implemented a multi-tier system for collecting user expense data. The application utilizes machine learning for recognizing products from receipt images. In the architecture of the solution, I have utilized an OAuth 2.0 compliant authentication server - <1>IdentityServer.</1>"
+      },
+      "luxmed": {
+        "duration": "2017 - sep 2022",
+        "location": "LUX MED",
+        "position": "Senior .NET Developer",
+        "previous-position": ".NET Developer",
+        "description": "At LUX MED, along with my team, I have completed numerous projects related to diagnostic imaging that are utilized by patients, doctors, and medical facility staff throughout Poland. In addition to developing application code, I also served as a SQL programmer and ensured the creation of efficient SQL code in the solutions. I have conducted several system migrations, both in terms of data and technology."
+      },
+      "datapolis": {
+        "duration": "jun — sep 2015",
+        "location": "Datapolis",
+        "position": "Junior Developer",
+        "description": "At Datapolis, I familiarized myself with the SharePoint Framework, which is utilized by the company's product for managing business processes of various organizations. I successfully optimized the deployment process of this application, significantly accelerating the installation at client sites by several times."
+      }
+    },
+    "skills": {
+      "section": "Skills",
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "devops": "DevOps",
+      "other": "Other",
+      "other-description": "I also have experience with the following technologies and tools:",
+      "specialist-level": "Specialist",
+      "advanced-level": "Advanced",
+      "experienced-level": "Experienced",
+      "beginner-level": "Begginer"
+    },
+    "projects": {
+      "section": "Projects",
+      "portfolio": {
+        "name": "Portfolio maciejos.pl",
+        "description": "This is the currently displayed page. For building this SPA application, I used React 18 and Bootstrap 5. The application is containerized using Docker images for <0>Node.js</0> and <1>Nginx</1>, and it is orchestrated by Kubernetes."
+      },
+      "pan-rachunek": {
+        "name": "Pan Rachunek",
+        "description": "Pan Rachunek is a multi-layered system for collecting expense-related data. With uploaded receipts, users can explore various statistical categories, such as monthly transportation expenses, price trend changes for specific products, or the quantity of water purchased in a given year. The application utilizes machine learning to appropriately categorize items from a receipt captured through a photo. Users can input recurring operations, effectively group their expenses, and even share expenditure summaries with others. The reporting system is integrated with the <1>Power BI embedded</1> mechanism, ensuring responsive reports and enabling multiple ways to filter relevant data. In terms of security, I implemented measures such as two-factor authentication (2FA) and integrated the frontend and backend layers with the authentication server, <2>IdentityServer</2>."
+      }
+    }
+  }
+}

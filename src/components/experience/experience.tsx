@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from 'react-i18next';
 import ExperienceCard from './experience-card';
 import type { IExperienceCard } from './experience-card';
 import './experience.css';
@@ -7,27 +8,41 @@ export interface IExperienceProps {
 }
 
 const Experience = (props: IExperienceProps) => {
+  const { t } = useTranslation();
   const cards: IExperienceCard[] = [
     {
-      duration: '2022 - obecnie',
-      location: 'Pan Rachunek',
-      postion: 'Twórca',
+      duration: t('experience.pan-rachunek.duration'),
+      location: t('experience.pan-rachunek.location'),
+      postion: t('experience.pan-rachunek.position'),
       summary: (
         <span>
-          Zaprojektowałem i zaimplementowałem wielowarstwowy system <span className='text-nowrap'>do zbierania</span>{' '}
-          danych związanych z wydatkami użytkowników. Aplikacja wykorzystuje uczenie maszynowe w celu rozpoznawania
-          produktów <span className='text-nowrap'>ze zdjęć</span> paragonów.{' '}
-          <span className='text-nowrap'>W architekturze</span> rozwiązania wykorzystałem serwer uwierzytelniający zgodny
-          z OAuth 2.0 -{' '}
-          <a
-            className='experience-card-link'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://duendesoftware.com/products/identityserver'
+          <Trans
+            i18nKey='experience.pan-rachunek.description'
+            components={[
+              <span className='text-nowrap' />,
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
+                className='experience-card-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://duendesoftware.com/products/identityserver'
+              />,
+            ]}
           >
-            IdentityServer
-          </a>
-          .
+            Zaprojektowałem i zaimplementowałem wielowarstwowy system <span className='text-nowrap'>do zbierania</span>{' '}
+            danych związanych z wydatkami użytkowników. Aplikacja wykorzystuje uczenie maszynowe w celu rozpoznawania
+            produktów <span className='text-nowrap'>ze zdjęć</span> paragonów.{' '}
+            <span className='text-nowrap'>W architekturze</span> rozwiązania wykorzystałem serwer uwierzytelniający
+            zgodny z OAuth 2.0 -{' '}
+            <a
+              className='experience-card-link'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://duendesoftware.com/products/identityserver'
+            >
+              IdentityServer
+            </a>
+            .
+          </Trans>
         </span>
       ),
       technologies: [
@@ -48,19 +63,21 @@ const Experience = (props: IExperienceProps) => {
       href: 'https://pan-rachunek.pl/',
     },
     {
-      duration: '2017 - wrz 2022',
-      location: 'LUX MED',
-      postion: 'Starszy programista .NET',
-      previousPositions: ['Programista .NET'],
+      duration: t('experience.luxmed.duration'),
+      location: t('experience.luxmed.location'),
+      postion: t('experience.luxmed.position'),
+      previousPositions: [t('experience.luxmed.previous-position')],
       summary: (
         <span>
-          W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową,{' '}
-          <span className='text-nowrap'>z których</span>
-          korzystają pacjenci, lekarze <span className='text-nowrap'>i pracownicy</span> placówek medycznych{' '}
-          <span className='text-nowrap'>w całej</span>
-          Polsce. Oprócz tworzenia kodu aplikacyjnego, pełniłem również rolę programisty SQL{' '}
-          <span className='text-nowrap'>i dbałem</span> o tworzenie wydajnego kodu SQL w rozwiązaniach. Przeprowadziłem
-          wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych.
+          <Trans i18nKey='experience.luxmed.description' components={[<span className='text-nowrap' />]}>
+            W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową,{' '}
+            <span className='text-nowrap'>z których</span>
+            korzystają pacjenci, lekarze <span className='text-nowrap'>i pracownicy</span> placówek medycznych{' '}
+            <span className='text-nowrap'>w całej</span>
+            Polsce. Oprócz tworzenia kodu aplikacyjnego, pełniłem również rolę programisty SQL{' '}
+            <span className='text-nowrap'>i dbałem</span> o tworzenie wydajnego kodu SQL w rozwiązaniach.
+            Przeprowadziłem wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych.
+          </Trans>
         </span>
       ),
       technologies: [
@@ -80,14 +97,16 @@ const Experience = (props: IExperienceProps) => {
       href: 'https://www.luxmed.pl/',
     },
     {
-      duration: 'cze — wrz 2015',
-      location: 'Datapolis',
-      postion: 'Młodszy programista',
+      duration: t('experience.datapolis.duration'),
+      location: t('experience.datapolis.location'),
+      postion: t('experience.datapolis.position'),
       summary: (
         <span>
-          W Datapolis zaznajomiłem się z SharePoint Framework, który jest wykorzystywany przez firmowy produkt służący
-          do zarządzania procesami biznesowymi różnych organizacji. Udało mi się zoptymalizować proces wdrożeniowy tej
-          aplikacji, przyspieszając kilkunastokrotnie instalację u klientów.
+          <Trans i18nKey='experience.datapolis.description'>
+            W Datapolis zaznajomiłem się z SharePoint Framework, który jest wykorzystywany przez firmowy produkt służący
+            do zarządzania procesami biznesowymi różnych organizacji. Udało mi się zoptymalizować proces wdrożeniowy tej
+            aplikacji, przyspieszając kilkunastokrotnie instalację u klientów.
+          </Trans>
         </span>
       ),
       technologies: ['SharePoint', '.NET', 'C#', 'WPF'],
@@ -106,7 +125,9 @@ const Experience = (props: IExperienceProps) => {
   }
   return (
     <div id='experience' className='experience'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Doświadczenie</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+        <Trans i18nKey='experience.section'>Doświadczenie</Trans>
+      </h4>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );

@@ -1,5 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import './skills.css';
+import { useTranslation } from 'react-i18next';
 
 export interface ISkillCard {
   name: string;
@@ -13,6 +14,8 @@ export interface ISkillCardProps {
 }
 
 const SkillCard = (props: ISkillCardProps) => {
+  const { t } = useTranslation();
+
   const generateSkillLevel = (level: number, accentColor: string) => {
     const skillLevel = [];
     const maxLevel = 10;
@@ -46,15 +49,15 @@ const SkillCard = (props: ISkillCardProps) => {
 
   const getSkillLevelDescription = (level: number) => {
     if (level <= 2) {
-      return 'Początkujący';
+      return t('skills.beginner-level');
     }
     if (level > 2 && level < 6) {
-      return 'Doświadczony';
+      return t('skills.experienced-level');
     }
     if (level >= 6 && level < 9) {
-      return 'Zaawansowany';
+      return t('skills.advanced-level');
     }
-    return 'Specjalista';
+    return t('skills.specialist-level');
   };
   return (
     <Row className='p-2'>

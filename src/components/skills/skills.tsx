@@ -18,12 +18,14 @@ import {
   Nginx,
   Iis,
 } from '../../assets/logos/skills';
+import { Trans, useTranslation } from 'react-i18next';
 
 export interface ISkillsProps {
   cinematicMode: boolean;
 }
 
 const Skills = (props: ISkillsProps) => {
+  useTranslation();
   const skillImageWidth = '2.5rem';
   const skillImageHeight = '2.5rem';
   const languages: ISkillCard[] = [
@@ -138,9 +140,13 @@ const Skills = (props: ISkillsProps) => {
 
   return (
     <div id='skills' className='skills'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Technologie</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+        <Trans i18nKey='skills.section'>Technologie</Trans>
+      </h4>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>Języki</h5>
+        <h5 className='text-highlight-color'>
+          <Trans i18nKey='skills.languages'>Języki</Trans>
+        </h5>
         <Row>
           {languages.map((value, index) => (
             <Col key={index} xs={12}>
@@ -150,7 +156,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>Backend</h5>
+        <h5 className='text-highlight-color'>
+          <Trans i18nKey='skills.backend'>Backend</Trans>
+        </h5>
         <Row>
           {backendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -160,7 +168,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>Frontend</h5>
+        <h5 className='text-highlight-color'>
+          <Trans i18nKey='skills.frontend'>Frontend</Trans>
+        </h5>
         <Row>
           {frontendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -170,7 +180,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>DevOps</h5>
+        <h5 className='text-highlight-color'>
+          <Trans i18nKey='skills.devops'>DevOps</Trans>
+        </h5>
         <Row>
           {infrastructureSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -180,8 +192,14 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>Inne</h5>
-        <p>Posiadam również doświadczenie z następującymi technologiami i narzędziami:</p>
+        <h5 className='text-highlight-color'>
+          <Trans i18nKey='skills.other'>Inne</Trans>
+        </h5>
+        <p>
+          <Trans i18nKey='skills.other-description'>
+            Posiadam również doświadczenie z następującymi technologiami i narzędziami:
+          </Trans>
+        </p>
         <Row>
           {others.map((value, index) => (
             <Col key={index} xs={6} sm={4} lg={6} xxl={4}>
