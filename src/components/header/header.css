@@ -76,3 +76,14 @@
 .selected-language {
   color: var(--app-text-highlight-color);
 }
+
+.language-button {
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.language-separator {
+  font-weight: 400;
+  cursor: default;
+}

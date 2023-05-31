@@ -1,7 +1,9 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { Mail, Phone } from '../../assets/icons';
+import { Trans, useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  useTranslation();
   const showPhone = process.env.REACT_APP_SHOW_PHONE_NUMBER === 'true';
   return (
     <Container>
@@ -12,7 +14,9 @@ const Hero = () => {
               Maciej Jakubiak
             </a>
           </h1>
-          <h3 className='mb-3 text-xl'>Programista .NET</h3>
+          <h3 className='mb-3 text-xl'>
+            <Trans i18nKey='header.hero.job-position'>Programista .NET</Trans>
+          </h3>
           <p className='mb-4'>Projektuję, implementuję i wdrażam rozwiązania webowe ułatwiające ludziom życie.</p>
           <p className='mb-2'>
             <a className='text-highlight-on-hover-color text-sm' href='mailto:mjakubiak@maciejos.pl'>
