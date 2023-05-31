@@ -2,8 +2,16 @@
   "translation": {
     "header": {
       "hero": {
-        "job-position": ".NET Developer"
-      }
+        "job-position": ".NET Developer",
+        "description": "I design, implement, and deploy web solutions that make people's lives easier."
+      },
+      "navigation": {
+        "about-me": "About me",
+        "experience": "Experience",
+        "skills": "Skills",
+        "projects": "Projects"
+      },
+      "perspective-view": "Perspective view"
     }
   }
 }

@@ -2,8 +2,16 @@
   "translation": {
     "header": {
       "hero": {
-        "job-position": "Programista .NET"
-      }
+        "job-position": "Programista .NET",
+        "description": "Projektuję, implementuję i wdrażam rozwiązania webowe ułatwiające ludziom życie."
+      },
+      "navigation": {
+        "about-me": "O mnie",
+        "experience": "Doświadczenie",
+        "skills": "Technologie",
+        "projects": "Projekty"
+      },
+      "perspective-view": "Widok perspektywistyczny"
     }
   }
 }
