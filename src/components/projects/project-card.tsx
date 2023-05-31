@@ -78,6 +78,7 @@ const ProjectCard = (props: IProjectCard) => {
             </a>
             {props.githubHref && (
               <a
+                aria-label='Github project'
                 className='ms-3 project-card-github-icon  text-highlight-on-hover-color '
                 target='_blank'
                 rel='noopener noreferrer'

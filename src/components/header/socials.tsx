@@ -6,6 +6,7 @@ const Socials = () => (
     <Row className='mt-3'>
       <Col xs='auto' className='px-2'>
         <a
+          aria-label='Linkedin'
           className='text-highlight-on-hover-color'
           target='_blank'
           rel='noopener noreferrer'
@@ -16,6 +17,7 @@ const Socials = () => (
       </Col>
       <Col xs='auto' className='px-2'>
         <a
+          aria-label='Github'
           className='text-highlight-on-hover-color'
           target='_blank'
           rel='noopener noreferrer'
@@ -26,6 +28,7 @@ const Socials = () => (
       </Col>
       <Col xs='auto' className='px-2'>
         <a
+          aria-label='Facebook'
           className='text-highlight-on-hover-color'
           target='_blank'
           rel='noopener noreferrer'
