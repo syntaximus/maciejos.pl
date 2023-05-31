@@ -125,9 +125,9 @@ const Experience = (props: IExperienceProps) => {
   }
   return (
     <div id='experience' className='experience'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+      <h3 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
         <Trans i18nKey='experience.section'>Doświadczenie</Trans>
-      </h4>
+      </h3>
       <ul className='experience-group'>{cardsElements}</ul>
     </div>
   );

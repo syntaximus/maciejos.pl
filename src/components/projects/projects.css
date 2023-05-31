@@ -65,12 +65,6 @@
   border-radius: 4px;
 }
 
-@media all and not (min-width: 768px) {
-  .project-card-picture {
-    width: 7.5rem;
-  }
-}
-
 .project-card-picture:hover {
   word-wrap: break-word;
   background-clip: border-box;

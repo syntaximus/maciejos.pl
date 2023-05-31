@@ -9,9 +9,9 @@ const About = (props: IAboutProps) => {
   useTranslation();
   return (
     <div id='about' className='about'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+      <h3 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
         <Trans i18nKey='about.section'>O mnie</Trans>
-      </h4>
+      </h3>
       <p className='text-justify'>
         <Trans
           i18nKey='about.first-paragraph'

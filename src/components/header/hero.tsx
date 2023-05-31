@@ -14,9 +14,9 @@ const Hero = () => {
               Maciej Jakubiak
             </a>
           </h1>
-          <h3 className='mb-3 text-xl'>
+          <h2 className='mb-3 text-xl'>
             <Trans i18nKey='header.hero.job-position'>Programista .NET</Trans>
-          </h3>
+          </h2>
           <p className='mb-4'>
             <Trans i18nKey='header.hero.description'>
               Projektuję, implementuję i wdrażam rozwiązania webowe ułatwiające ludziom życie.

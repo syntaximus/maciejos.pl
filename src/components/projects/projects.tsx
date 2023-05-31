@@ -161,9 +161,9 @@ const Projects = (props: IProjectsProps) => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+      <h3 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
         <Trans i18nKey='projects.section'>Projekty</Trans>
-      </h4>
+      </h3>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );

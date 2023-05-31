@@ -140,13 +140,13 @@ const Skills = (props: ISkillsProps) => {
 
   return (
     <div id='skills' className='skills'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+      <h3 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
         <Trans i18nKey='skills.section'>Technologie</Trans>
-      </h4>
+      </h3>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>
+        <h4 className='text-highlight-color text-xl'>
           <Trans i18nKey='skills.languages'>Języki</Trans>
-        </h5>
+        </h4>
         <Row>
           {languages.map((value, index) => (
             <Col key={index} xs={12}>
@@ -156,9 +156,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>
+        <h4 className='text-highlight-color text-xl'>
           <Trans i18nKey='skills.backend'>Backend</Trans>
-        </h5>
+        </h4>
         <Row>
           {backendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -168,9 +168,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>
+        <h4 className='text-highlight-color text-xl'>
           <Trans i18nKey='skills.frontend'>Frontend</Trans>
-        </h5>
+        </h4>
         <Row>
           {frontendSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -180,9 +180,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>
+        <h4 className='text-highlight-color text-xl'>
           <Trans i18nKey='skills.devops'>DevOps</Trans>
-        </h5>
+        </h4>
         <Row>
           {infrastructureSkills.map((value, index) => (
             <Col key={index} xs={12}>
@@ -192,9 +192,9 @@ const Skills = (props: ISkillsProps) => {
         </Row>
       </div>
       <div className='my-3 skills-card'>
-        <h5 className='text-highlight-color'>
+        <h4 className='text-highlight-color text-xl'>
           <Trans i18nKey='skills.other'>Inne</Trans>
-        </h5>
+        </h4>
         <p>
           <Trans i18nKey='skills.other-description'>
             Posiadam również doświadczenie z następującymi technologiami i narzędziami:
