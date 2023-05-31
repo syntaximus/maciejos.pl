@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from 'react-i18next';
 import ProjectCard from './project-card';
 import type { IProjectCard } from './project-card';
 import './projects.css';
@@ -7,32 +8,51 @@ export interface IProjectsProps {
 }
 
 const Projects = (props: IProjectsProps) => {
+  const { t } = useTranslation();
   const cards: IProjectCard[] = [
     {
-      name: 'Portfolio maciejos.pl',
+      name: t('projects.portfolio.name'),
       pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401 }],
       summary: (
         <span>
-          Jest to aktualnie wyświetlana strona. Do budowy tej aplikacji SPA wykorzystałem React 18 i Bootstrap 5.
-          Aplikacja jest skonteneryzowana za pomocą dockerowych obrazów{' '}
-          <a
-            className='project-card-link'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://hub.docker.com/_/node'
+          <Trans
+            i18nKey='projects.portfolio.description'
+            components={[
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
+                className='project-card-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://hub.docker.com/_/node'
+              />,
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
+                className='project-card-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://hub.docker.com/_/nginx'
+              />,
+            ]}
           >
-            node.js
-          </a>{' '}
-          oraz{' '}
-          <a
-            className='project-card-link'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://hub.docker.com/_/nginx'
-          >
-            nginx
-          </a>{' '}
-          i jest orkiestrowana przez Kubernetes.
+            Jest to aktualnie wyświetlana strona. Do budowy tej aplikacji SPA wykorzystałem React 18 i Bootstrap 5.
+            Aplikacja jest skonteneryzowana za pomocą dockerowych obrazów{' '}
+            <a
+              className='project-card-link'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://hub.docker.com/_/node'
+            >
+              node.js
+            </a>{' '}
+            oraz{' '}
+            <a
+              className='project-card-link'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://hub.docker.com/_/nginx'
+            >
+              nginx
+            </a>{' '}
+            i jest orkiestrowana przez Kubernetes.
+          </Trans>
         </span>
       ),
       technologies: ['Kubernetes', 'React', 'Bootstrap', 'Typescript'],
@@ -40,7 +60,7 @@ const Projects = (props: IProjectsProps) => {
       githubHref: 'https://github.com/syntaximus/maciejos.pl',
     },
     {
-      name: 'Pan Rachunek',
+      name: t('projects.pan-rachunek.name'),
       pictures: [
         { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160 },
         { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160 },
@@ -50,34 +70,53 @@ const Projects = (props: IProjectsProps) => {
       ],
       summary: (
         <span>
-          Pan Rachunek to wielowarstwowy system do zbierania danych związanych z wydatkami. Dzięki wgranym rachunkom
-          użytkownicy mogą sprawdzać wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na
-          transport, zmianę trendu ceny jednostkowej produktu, czy ilość litrów kupionej wody w danym roku. Aplikacja
-          wykorzystuje uczenie maszynowe do odpowiedniego kategoryzowania elementów paragonu wczytanego ze zdjęcia.
-          Użytkownicy mogą wprowadzać operacje cykliczne, odpowiednio grupować dane wydatki,{' '}
-          <span className='text-nowrap'>a także</span> udostępniać swoje podsumowania wydatków innym. System raportowy
-          został zintegrowany z mechanizmem{' '}
-          <a
-            className='project-card-link'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://powerbi.microsoft.com/en-us/power-bi-embedded/'
+          <Trans
+            i18nKey='projects.pan-rachunek.description'
+            components={[
+              <span className='text-nowrap' />,
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
+                className='project-card-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://powerbi.microsoft.com/en-us/power-bi-embedded/'
+              />,
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
+                className='project-card-link'
+                target='_blank'
+                rel='noopener noreferrer'
+                href='https://duendesoftware.com/products/identityserver'
+              />,
+            ]}
           >
-            Power BI embedded
-          </a>
-          , dzięki czemu raporty i statystyki są bardziej responsywne i umożliwiają wiele sposobów filtrowania
-          potrzebnych danych. W aplikacji wprowadziłem zabezpieczenia takie jak uwierzytelnienie dwuskładnikowe (2FA)
-          czy integracja warstwy frontendowej <span className='text-nowrap'>i backendowej</span> z serwerem
-          uwierzytelniającym{' '}
-          <a
-            className='project-card-link'
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://duendesoftware.com/products/identityserver'
-          >
-            IdentityServer
-          </a>
-          .
+            Pan Rachunek to wielowarstwowy system do zbierania danych związanych z wydatkami. Dzięki wgranym rachunkom
+            użytkownicy mogą sprawdzać wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na
+            transport, zmianę trendu ceny jednostkowej produktu, czy ilość litrów kupionej wody w danym roku. Aplikacja
+            wykorzystuje uczenie maszynowe do odpowiedniego kategoryzowania elementów paragonu wczytanego ze zdjęcia.
+            Użytkownicy mogą wprowadzać operacje cykliczne, odpowiednio grupować dane wydatki,{' '}
+            <span className='text-nowrap'>a także</span> udostępniać swoje podsumowania wydatków innym. System raportowy
+            został zintegrowany z mechanizmem{' '}
+            <a
+              className='project-card-link'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://powerbi.microsoft.com/en-us/power-bi-embedded/'
+            >
+              Power BI embedded
+            </a>
+            , dzięki czemu raporty i statystyki są bardziej responsywne i umożliwiają wiele sposobów filtrowania
+            potrzebnych danych. W aplikacji wprowadziłem zabezpieczenia takie jak uwierzytelnienie dwuskładnikowe (2FA)
+            czy integracja warstwy frontendowej <span className='text-nowrap'>i backendowej</span> z serwerem
+            uwierzytelniającym{' '}
+            <a
+              className='project-card-link'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://duendesoftware.com/products/identityserver'
+            >
+              IdentityServer
+            </a>
+            .
+          </Trans>
         </span>
       ),
       technologies: [
@@ -110,7 +149,9 @@ const Projects = (props: IProjectsProps) => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>Projekty</h4>
+      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+        <Trans i18nKey='projects.section'>Projekty</Trans>
+      </h4>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );
