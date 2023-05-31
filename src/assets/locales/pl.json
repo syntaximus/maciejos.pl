@@ -21,7 +21,7 @@
       "fourth-paragraph": "Gdy nie ma mnie przy komputerze najczęściej zajmuję się swoim hobby jakim jest triathlon, <0>a dokładniej</0> trening na pełen dystans Ironmana."
     },
     "experience": {
-      "section": "Experience",
+      "section": "Doświadczenie",
       "pan-rachunek": {
         "duration": "2022 - obecnie",
         "location": "Pan Rachunek",
@@ -54,6 +54,17 @@
       "advanced-level": "Zaawansowany",
       "experienced-level": "Doświadczony",
       "beginner-level": "Początkujący"
+    },
+    "projects": {
+      "section": "Projekty",
+      "portfolio": {
+        "name": "Portfolio maciejos.pl",
+        "description": "Jest to aktualnie wyświetlana strona. Do budowy tej aplikacji SPA wykorzystałem React 18 i Bootstrap 5. Aplikacja jest skonteneryzowana za pomocą dockerowych obrazów <0>node.js</0> oraz <1>nginx</1> i jest orkiestrowana przez Kubernetes."
+      },
+      "pan-rachunek": {
+        "name": "Pan Rachunek",
+        "description": "Pan Rachunek to wielowarstwowy system do zbierania danych związanych z wydatkami. Dzięki wgranym rachunkom użytkownicy mogą sprawdzać wiele różnych klas statystyk takich jak miesięczną ilość wydanych pieniędzy na transport, zmianę trendu ceny jednostkowej produktu, czy ilość litrów kupionej wody w danym roku. Aplikacja wykorzystuje uczenie maszynowe do odpowiedniego kategoryzowania elementów paragonu wczytanego ze zdjęcia. Użytkownicy mogą wprowadzać operacje cykliczne, odpowiednio grupować dane wydatki, <0>a także</0> udostępniać swoje podsumowania wydatków innym. System raportowy został zintegrowany z mechanizmem <1>Power BI embedded</1>, dzięki czemu raporty i statystyki są bardziej responsywne i umożliwiają wiele sposobów filtrowania potrzebnych danych. W aplikacji wprowadziłem zabezpieczenia takie jak uwierzytelnienie dwuskładnikowe (2FA) czy integracja warstwy frontendowej <0>i backendowej</0> z serwerem uwierzytelniającym <2>IdentityServer</2>."
+      }
     }
   }
 }

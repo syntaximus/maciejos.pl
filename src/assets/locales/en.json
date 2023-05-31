@@ -54,6 +54,17 @@
       "advanced-level": "Advanced",
       "experienced-level": "Experienced",
       "beginner-level": "Begginer"
+    },
+    "projects": {
+      "section": "Projects",
+      "portfolio": {
+        "name": "Portfolio maciejos.pl",
+        "description": "This is the currently displayed page. For building this SPA application, I used React 18 and Bootstrap 5. The application is containerized using Docker images for <0>Node.js</0> and <1>Nginx</1>, and it is orchestrated by Kubernetes."
+      },
+      "pan-rachunek": {
+        "name": "Pan Rachunek",
+        "description": "Pan Rachunek is a multi-layered system for collecting expense-related data. With uploaded receipts, users can explore various statistical categories, such as monthly transportation expenses, price trend changes for specific products, or the quantity of water purchased in a given year. The application utilizes machine learning to appropriately categorize items from a receipt captured through a photo. Users can input recurring operations, effectively group their expenses, and even share expenditure summaries with others. The reporting system is integrated with the <1>Power BI embedded</1> mechanism, ensuring responsive reports and enabling multiple ways to filter relevant data. In terms of security, I implemented measures such as two-factor authentication (2FA) and integrated the frontend and backend layers with the authentication server, <2>IdentityServer</2>."
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Language = () => {
   const { i18n } = useTranslation();

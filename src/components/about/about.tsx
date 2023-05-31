@@ -17,7 +17,7 @@ const About = (props: IAboutProps) => {
           i18nKey='about.first-paragraph'
           components={[
             <span className='text-nowrap' />,
-            <a target='_blank' rel='noopener noreferrer' href='https://ww2.mini.pw.edu.pl/' />,
+            <a target='_blank' rel='noopener noreferrer' href='https://ww2.mini.pw.edu.pl/' />, // eslint-disable-line jsx-a11y/anchor-has-content
           ]}
         >
           Od najmłodszych lat interesuję się technologiami. Dzięki zacięciu matematycznemu{' '}
@@ -46,8 +46,8 @@ const About = (props: IAboutProps) => {
         <Trans
           i18nKey='about.third-paragraph'
           components={[
-            <a target='_blank' rel='noopener noreferrer' href='https://kubernetes.io/' />,
-            <a target='_blank' rel='noopener noreferrer' href='/#projects' />,
+            <a target='_blank' rel='noopener noreferrer' href='https://kubernetes.io/' />, // eslint-disable-line jsx-a11y/anchor-has-content
+            <a target='_blank' rel='noopener noreferrer' href='/#projects' />, // eslint-disable-line jsx-a11y/anchor-has-content
           ]}
         >
           W swoich projektach stawiam na konteneryzację i administruję własnym klastrem{' '}

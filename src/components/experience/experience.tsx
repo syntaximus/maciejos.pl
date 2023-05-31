@@ -20,7 +20,7 @@ const Experience = (props: IExperienceProps) => {
             i18nKey='experience.pan-rachunek.description'
             components={[
               <span className='text-nowrap' />,
-              <a
+              <a // eslint-disable-line jsx-a11y/anchor-has-content
                 className='experience-card-link'
                 target='_blank'
                 rel='noopener noreferrer'
