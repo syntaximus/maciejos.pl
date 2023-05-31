@@ -19,6 +19,28 @@
       "second-paragraph": "Zawodowo zajmuję się tworzeniem aplikacji webowych <0>w środowisku</0> .NET zarówno <0>od strony</0> backendowej, <0>jak i frontendowej</0>. Zrealizowałem wiele projektów, <0>z których</0> korzystają setki tysięcy ludzi. Skupiam się <0>na optymalizacji</0> procesów <0>i tworzeniu</0> wydajnego kodu. Cyberbezpieczeństwo to mój konik <0>i dbam</0> o zachowanie wysokich standardów <0>w tej</0> dziedzinie w swoich rozwiązaniach.",
       "third-paragraph": "W swoich projektach stawiam na konteneryzację i administruję własnym klastrem <0>Kubernetes</0>. Obecnie zajmuję się tworzeniem serwisu webowego, umożliwiającego kontrolowanie wydatków - aplikację <1>Pan Rachunek</1>.",
       "fourth-paragraph": "Gdy nie ma mnie przy komputerze najczęściej zajmuję się swoim hobby jakim jest triathlon, <0>a dokładniej</0> trening na pełen dystans Ironmana."
+    },
+    "experience": {
+      "section": "Experience",
+      "pan-rachunek": {
+        "duration": "2022 - obecnie",
+        "location": "Pan Rachunek",
+        "position": "Twórca",
+        "description": "Zaprojektowałem i zaimplementowałem wielowarstwowy system <0>do zbierania</0> danych związanych z wydatkami użytkowników. Aplikacja wykorzystuje uczenie maszynowe w celu rozpoznawania produktów <0>ze zdjęć</0> paragonów. <0>W architekturze</0> rozwiązania wykorzystałem serwer uwierzytelniający zgodny z OAuth 2.0 - <1>IdentityServer</1>."
+      },
+      "luxmed": {
+        "duration": "2017 - wrz 2022",
+        "location": "LUX MED",
+        "position": "Starszy programista .NET",
+        "previous-position": "Programista .NET",
+        "description": "W LUX MED wraz z zespołem zrealizowałem wiele projektów związanych z diagnostyką obrazową, <0>z których</0> korzystają pacjenci, lekarze <0>i pracownicy</0> placówek medycznych <0>w całej</0> Polsce. Oprócz tworzenia kodu aplikacyjnego, pełniłem również rolę programisty SQL <0>i dbałem</0> o tworzenie wydajnego kodu SQL w rozwiązaniach. Przeprowadziłem wiele migracji systemów - zarówno tych od strony danych, jak i technologicznych."
+      },
+      "datapolis": {
+        "duration": "cze — wrz 2015",
+        "location": "Datapolis",
+        "position": "Młodszy programista",
+        "description": "W Datapolis zaznajomiłem się z SharePoint Framework, który jest wykorzystywany przez firmowy produkt służący do zarządzania procesami biznesowymi różnych organizacji. Udało mi się zoptymalizować proces wdrożeniowy tej aplikacji, przyspieszając kilkunastokrotnie instalację u klientów."
+      }
     }
   }
 }
