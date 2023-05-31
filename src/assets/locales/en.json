@@ -41,6 +41,19 @@
         "position": "Junior Developer",
         "description": "At Datapolis, I familiarized myself with the SharePoint Framework, which is utilized by the company's product for managing business processes of various organizations. I successfully optimized the deployment process of this application, significantly accelerating the installation at client sites by several times."
       }
+    },
+    "skills": {
+      "section": "Skills",
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "devops": "DevOps",
+      "other": "Other",
+      "other-description": "I also have experience with the following technologies and tools:",
+      "specialist-level": "Specialist",
+      "advanced-level": "Advanced",
+      "experienced-level": "Experienced",
+      "beginner-level": "Begginer"
     }
   }
 }

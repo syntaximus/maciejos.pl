@@ -41,6 +41,19 @@
         "position": "Młodszy programista",
         "description": "W Datapolis zaznajomiłem się z SharePoint Framework, który jest wykorzystywany przez firmowy produkt służący do zarządzania procesami biznesowymi różnych organizacji. Udało mi się zoptymalizować proces wdrożeniowy tej aplikacji, przyspieszając kilkunastokrotnie instalację u klientów."
       }
+    },
+    "skills": {
+      "section": "Technologie",
+      "languages": "Języki",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "devops": "DevOps",
+      "other": "Inne",
+      "other-description": "Posiadam również doświadczenie z następującymi technologiami i narzędziami:",
+      "specialist-level": "Specjalista",
+      "advanced-level": "Zaawansowany",
+      "experienced-level": "Doświadczony",
+      "beginner-level": "Początkujący"
     }
   }
 }
