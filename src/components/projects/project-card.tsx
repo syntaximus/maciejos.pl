@@ -16,6 +16,8 @@ export interface IProjectCardPicture {
   path: string;
   width: number;
   height: number;
+  thumbnailWidth: number;
+  thumbnailHeight: number;
 }
 
 const ProjectCard = (props: IProjectCard) => {
@@ -56,8 +58,8 @@ const ProjectCard = (props: IProjectCard) => {
                     onClick={open}
                     src={'/static/pictures/thumbnail' + value.path}
                     className='project-card-picture'
-                    width={140}
-                    height={83}
+                    width={value.thumbnailWidth}
+                    height={value.thumbnailHeight}
                   />
                 )}
               </Item>

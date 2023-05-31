@@ -12,7 +12,7 @@ const Projects = (props: IProjectsProps) => {
   const cards: IProjectCard[] = [
     {
       name: t('projects.portfolio.name'),
-      pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401 }],
+      pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401, thumbnailWidth: 140, thumbnailHeight: 80 }],
       summary: (
         <span>
           <Trans
@@ -62,11 +62,23 @@ const Projects = (props: IProjectsProps) => {
     {
       name: t('projects.pan-rachunek.name'),
       pictures: [
-        { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/yearly-report.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/summary-config.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/summary.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
+        { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
+        {
+          path: '/pan-rachunek/yearly-report.png',
+          width: 3840,
+          height: 2160,
+          thumbnailWidth: 140,
+          thumbnailHeight: 83,
+        },
+        {
+          path: '/pan-rachunek/summary-config.png',
+          width: 3840,
+          height: 2160,
+          thumbnailWidth: 140,
+          thumbnailHeight: 83,
+        },
+        { path: '/pan-rachunek/summary.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
       ],
       summary: (
         <span>
