@@ -16,6 +16,8 @@ export interface IProjectCardPicture {
   path: string;
   width: number;
   height: number;
+  thumbnailWidth: number;
+  thumbnailHeight: number;
 }
 
 const ProjectCard = (props: IProjectCard) => {
@@ -56,6 +58,8 @@ const ProjectCard = (props: IProjectCard) => {
                     onClick={open}
                     src={'/static/pictures/thumbnail' + value.path}
                     className='project-card-picture'
+                    width={value.thumbnailWidth}
+                    height={value.thumbnailHeight}
                   />
                 )}
               </Item>
@@ -76,6 +80,7 @@ const ProjectCard = (props: IProjectCard) => {
             </a>
             {props.githubHref && (
               <a
+                aria-label='Github project'
                 className='ms-3 project-card-github-icon  text-highlight-on-hover-color '
                 target='_blank'
                 rel='noopener noreferrer'

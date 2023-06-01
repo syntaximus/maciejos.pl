@@ -12,7 +12,7 @@ const Projects = (props: IProjectsProps) => {
   const cards: IProjectCard[] = [
     {
       name: t('projects.portfolio.name'),
-      pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401 }],
+      pictures: [{ path: '/maciejos/code.png', width: 2578, height: 1401, thumbnailWidth: 140, thumbnailHeight: 80 }],
       summary: (
         <span>
           <Trans
@@ -62,11 +62,23 @@ const Projects = (props: IProjectsProps) => {
     {
       name: t('projects.pan-rachunek.name'),
       pictures: [
-        { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/yearly-report.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/summary-config.png', width: 3840, height: 2160 },
-        { path: '/pan-rachunek/summary.png', width: 3840, height: 2160 },
+        { path: '/pan-rachunek/dashboard.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
+        { path: '/pan-rachunek/unit-price.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
+        {
+          path: '/pan-rachunek/yearly-report.png',
+          width: 3840,
+          height: 2160,
+          thumbnailWidth: 140,
+          thumbnailHeight: 83,
+        },
+        {
+          path: '/pan-rachunek/summary-config.png',
+          width: 3840,
+          height: 2160,
+          thumbnailWidth: 140,
+          thumbnailHeight: 83,
+        },
+        { path: '/pan-rachunek/summary.png', width: 3840, height: 2160, thumbnailWidth: 140, thumbnailHeight: 83 },
       ],
       summary: (
         <span>
@@ -149,9 +161,9 @@ const Projects = (props: IProjectsProps) => {
   }
   return (
     <div id='projects' className='projects'>
-      <h4 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
+      <h3 className={'text-highlight-color' + (!props.cinematicMode ? ' section-header' : '')}>
         <Trans i18nKey='projects.section'>Projekty</Trans>
-      </h4>
+      </h3>
       <ul className='project-group'>{cardsElements}</ul>
     </div>
   );
