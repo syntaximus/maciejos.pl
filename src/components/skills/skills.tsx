@@ -116,6 +116,7 @@ const Skills = (props: ISkillsProps) => {
     'Kibana',
     'Azure',
     'PowerShell',
+    'PWA',
     'IdentityServer',
     'ASP.NET',
     'Ext.js',
@@ -128,6 +129,9 @@ const Skills = (props: ISkillsProps) => {
     'Wireshark',
     'Grafana',
     'Prometheus',
+    'Dapper',
+    'EF',
+    'SSIS',
     'MySQL',
     'PostgreSQL',
     'Visual Studio',
@@ -135,6 +139,8 @@ const Skills = (props: ISkillsProps) => {
     'Jenkins',
     'Yarn',
     'Node.js',
+    'Gzipper',
+    'Burp Suite',
     'ILSpy',
   ];
 
