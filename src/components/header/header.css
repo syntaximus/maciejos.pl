@@ -74,16 +74,21 @@
 }
 
 .selected-language {
-  color: var(--app-text-highlight-color);
+  color: var(--app-text-selection-color);
+  font-weight: 700;
 }
 
 .language-button {
-  font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.language-button:hover {
+  color: var(--app-text-highlight-color);
 }
 
 .language-separator {
-  font-weight: 400;
   cursor: default;
+  font-size: 1.1rem;
 }

@@ -139,6 +139,7 @@ const Projects = (props: IProjectsProps) => {
         'ASP.NET',
         'SQL',
         'React',
+        'PWA',
         'Bootstrap',
         'Typescript',
         'C#',

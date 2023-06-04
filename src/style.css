@@ -1,3 +1,8 @@
+::selection {
+  color: var(--app-text-selection-color);
+  background: var(--app-badge-background-color);
+}
+
 body {
   background-color: var(--app-background-color);
   color: var(--app-text-main-color);

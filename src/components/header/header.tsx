@@ -3,7 +3,7 @@ import './header.css';
 import Hero from './hero';
 import Navigation from './navigation';
 import Socials from './socials';
-import { Form } from 'react-bootstrap';
+import { Container, Form } from 'react-bootstrap';
 import Language from './language';
 import { useTranslation } from 'react-i18next';
 
@@ -33,19 +33,21 @@ const Header = (props: IHeaderProps) => {
         <div>
           <Socials />
           {!props.cinematicMode && (
-            <Form.Check
-              className='pb-2 perspective-switch'
-              type='switch'
-              id='perspective-switch'
-              label={t('header.perspective-view')}
-              checked={props.cinematicMode}
-              onChange={() => {
-                document.body.style.overflow = props.cinematicMode ? '' : 'hidden';
-                document.body.style.height = props.cinematicMode ? '' : '100%';
-                document.body.style.width = props.cinematicMode ? '' : '100%';
-                props.setCinematicMode((prev) => !prev);
-              }}
-            />
+            <Container>
+              <Form.Check
+                className='pb-2 perspective-switch'
+                type='switch'
+                id='perspective-switch'
+                label={t('header.perspective-view')}
+                checked={props.cinematicMode}
+                onChange={() => {
+                  document.body.style.overflow = props.cinematicMode ? '' : 'hidden';
+                  document.body.style.height = props.cinematicMode ? '' : '100%';
+                  document.body.style.width = props.cinematicMode ? '' : '100%';
+                  props.setCinematicMode((prev) => !prev);
+                }}
+              />
+            </Container>
           )}
         </div>
       </div>

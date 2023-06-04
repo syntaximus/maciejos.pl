@@ -47,7 +47,7 @@ const About = (props: IAboutProps) => {
           i18nKey='about.third-paragraph'
           components={[
             <a target='_blank' rel='noopener noreferrer' href='https://kubernetes.io/' />, // eslint-disable-line jsx-a11y/anchor-has-content
-            <a target='_blank' rel='noopener noreferrer' href='/#projects' />, // eslint-disable-line jsx-a11y/anchor-has-content
+            <a href='/#projects' />, // eslint-disable-line jsx-a11y/anchor-has-content
           ]}
         >
           W swoich projektach stawiam na konteneryzację i administruję własnym klastrem{' '}
