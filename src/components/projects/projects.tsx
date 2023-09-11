@@ -72,6 +72,13 @@ const Projects = (props: IProjectsProps) => {
           thumbnailHeight: 83,
         },
         {
+          path: '/pan-rachunek/scrappers-summary.png',
+          width: 2560,
+          height: 1440,
+          thumbnailWidth: 140,
+          thumbnailHeight: 83,
+        },
+        {
           path: '/pan-rachunek/summary-config.png',
           width: 3840,
           height: 2160,
@@ -138,6 +145,8 @@ const Projects = (props: IProjectsProps) => {
         '.NET 7.0',
         'ASP.NET',
         'SQL',
+        'MongoDB',
+        'RabbitMQ',
         'React',
         'PWA',
         'Bootstrap',
