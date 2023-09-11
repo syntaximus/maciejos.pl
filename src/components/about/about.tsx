@@ -54,11 +54,11 @@ const About = (props: IAboutProps) => {
           <a target='_blank' rel='noopener noreferrer' href='https://kubernetes.io/'>
             Kubernetes
           </a>
-          . Obecnie zajmuję się tworzeniem serwisu webowego, umożliwiającego kontrolowanie wydatków - aplikację{' '}
+          . Obecnie zajmuję się tworzeniem autorskiej aplikacji{' '}
           <a className='text-nowrap' href='/#projects'>
             Pan Rachunek
-          </a>
-          .
+          </a>{' '}
+          , umożliwiającj kontrolowanie wydatków.
         </Trans>
       </p>
       <p className='text-justify'>

@@ -16,7 +16,7 @@
     "about": {
       "section": "About me",
       "first-paragraph": "From a young age, I have been interested in technology. With a strong inclination towards mathematics and computer science, I graduated in Computer Science from the <1>Faculty of Mathematics and Information Science at the Warsaw University of Technology</1>. Programming is my passion, and implementing new and interesting solutions brings me great satisfaction.",
-      "second-paragraph": "Professionally, I specialize in developing web applications in the .NET environment, both on the backend and frontend. I have completed numerous projects that are used by hundreds of thousands of people. I focus on process optimization and creating efficient code. Cybersecurity is also a keen interest of mine, and I strive to maintain high standards in this field within my solutions.",
+      "second-paragraph": "Professionally, I specialize in developing web applications in the .NET environment, both on the backend and frontend. I have completed numerous projects that are used by hundreds of thousands of people. I am focusing on process optimization and creating efficient code. Cybersecurity is also a keen interest of mine, and I strive to maintain high standards in this field within my solutions.",
       "third-paragraph": "In my projects, I prioritize containerization and manage my own <0>Kubernetes</0> cluster. Currently, I am working on creating a web service called <1>Pan Rachunek</1>, which enables expense management.",
       "fourth-paragraph": "When I'm not at the computer, I dedicate my time to my hobby, which is triathlon, specifically training for the full Ironman distance."
     },
@@ -33,7 +33,7 @@
         "location": "LUX MED",
         "position": "Senior .NET Developer",
         "previous-position": ".NET Developer",
-        "description": "At LUX MED, along with my team, I have completed numerous projects related to diagnostic imaging that are utilized by patients, doctors, and medical facility staff throughout Poland. In addition to developing application code, I also served as a SQL programmer and ensured the creation of efficient SQL code in the solutions. I have conducted several system migrations, both in terms of data and technology."
+        "description": "At LUX MED, along with my team, I have completed numerous projects related to diagnostic imaging that are utilized by patients, doctors, and medical facility staff across Poland. In addition to developing application code, I also served as a SQL programmer and ensured the creation of efficient SQL code in the solutions. I have conducted several system migrations, both in terms of data and technology."
       },
       "datapolis": {
         "duration": "jun — sep 2015",
@@ -49,7 +49,7 @@
       "frontend": "Frontend",
       "devops": "DevOps",
       "other": "Other",
-      "other-description": "I also have experience with the following technologies and tools:",
+      "other-description": "In addition, I have experience with the following technologies and tools:",
       "specialist-level": "Specialist",
       "advanced-level": "Advanced",
       "experienced-level": "Experienced",

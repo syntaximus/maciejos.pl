@@ -52,6 +52,8 @@ const Experience = (props: IExperienceProps) => {
         '.NET 7.0',
         'ASP.NET',
         'SQL',
+        'MongoDB',
+        'RabbitMQ',
         'React',
         'PWA',
         'Bootstrap',

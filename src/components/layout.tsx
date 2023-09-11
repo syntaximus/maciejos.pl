@@ -3,11 +3,13 @@ import { Col } from 'react-bootstrap';
 import ScrollSpy from 'react-ui-scrollspy';
 import { About, Footer, Header, Experience, Projects, Skills } from '.';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Layout = () => {
   const [cinematicMode, setCinematicMode] = useState(false);
   const [pauseAnimation, setPauseAnimation] = useState(false);
   const [perspectiveMarginTop, setPerspectiveMarginTop] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handler = (event: WheelEvent) => {
@@ -44,7 +46,7 @@ const Layout = () => {
           <Form.Check
             type='switch'
             id='perspective-switch-main'
-            label='Widok perspektywistyczny'
+            label={t('header.perspective-view')}
             className='sticky-top'
             checked={cinematicMode}
             onChange={() => {
