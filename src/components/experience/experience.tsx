@@ -49,7 +49,7 @@ const Experience = (props: IExperienceProps) => {
         'Kubernetes',
         'Docker',
         'Azure',
-        '.NET 7.0',
+        '.NET 8.0',
         'ASP.NET',
         'SQL',
         'MongoDB',

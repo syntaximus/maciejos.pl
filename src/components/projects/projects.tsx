@@ -142,7 +142,7 @@ const Projects = (props: IProjectsProps) => {
         'Kubernetes',
         'Docker',
         'Azure',
-        '.NET 7.0',
+        '.NET 8.0',
         'ASP.NET',
         'SQL',
         'MongoDB',
