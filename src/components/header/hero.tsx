@@ -4,7 +4,7 @@ import { Trans, useTranslation } from 'react-i18next';
 
 const Hero = () => {
   useTranslation();
-  const showPhone = process.env.REACT_APP_SHOW_PHONE_NUMBER === 'true';
+  const showPhone = import.meta.env.VITE_SHOW_PHONE_NUMBER === 'true';
   return (
     <Container>
       <Row>
