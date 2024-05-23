@@ -11,6 +11,18 @@ const Experience = (props: IExperienceProps) => {
   const { t } = useTranslation();
   const cards: IExperienceCard[] = [
     {
+      duration: t('experience.wk.duration'),
+      location: t('experience.wk.location'),
+      postion: t('experience.wk.position'),
+      summary: (
+        <span>
+          <Trans i18nKey='experience.wk.description' components={[<span className='text-nowrap' />]} />
+        </span>
+      ),
+      technologies: ['.NET 4.8', 'ASP.NET', 'SQL', 'Angular', 'TypeScript', 'WCF', 'C#', 'IIS', 'TeamCity'],
+      href: 'https://www.wolterskluwer.com/pl-pl',
+    },
+    {
       duration: t('experience.pan-rachunek.duration'),
       location: t('experience.pan-rachunek.location'),
       postion: t('experience.pan-rachunek.position'),
