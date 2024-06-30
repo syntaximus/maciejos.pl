@@ -3,3 +3,4 @@ export { Phone } from './phone';
 export { Linkedin } from './linkedin';
 export { Github } from './github';
 export { Facebook } from './facebook';
+export { Strava } from './strava';
