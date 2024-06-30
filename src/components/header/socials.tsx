@@ -43,7 +43,7 @@ const Socials = () => (
           className='text-highlight-on-hover-color'
           target='_blank'
           rel='noopener noreferrer'
-          href='https://www.strava.com/athletes/17025919'
+          href='https://www.strava.com/athletes/maciejos'
         >
           <Strava style={{ width: 30, height: 30 }} />
         </a>
