@@ -1,4 +1,4 @@
-FROM arm64v8/node:20.1.0-alpine3.16 AS builder
+FROM arm64v8/node:23.1.0-alpine3.19 AS builder
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
