@@ -1,10 +1,10 @@
 FROM arm64v8/node:23.1.0-alpine3.19 AS builder
 WORKDIR /app
 COPY package.json .
-COPY yarn.lock .
-RUN yarn install
+COPY pnpm-lock.yaml .
+RUN pnpm install
 COPY . .
-RUN yarn build
+RUN pnpm build
 
 # Bundle static assets with nginx
 FROM arm64v8/nginx:1.23.4-alpine as production
