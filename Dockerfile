@@ -1,8 +1,13 @@
 FROM arm64v8/node:23.1.0-alpine3.19 AS builder
 WORKDIR /app
+
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
 COPY package.json .
 COPY pnpm-lock.yaml .
-RUN pnpm install
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 COPY . .
 RUN pnpm build
 
