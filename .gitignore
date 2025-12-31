@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# language assets
-/src/assets/locales/en.json
-/src/assets/locales/pl.json
