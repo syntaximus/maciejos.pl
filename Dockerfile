@@ -1,4 +1,4 @@
-FROM arm64v8/node:23.1.0-alpine3.19 AS builder
+FROM arm64v8/node:20-alpine3.22 AS builder
 WORKDIR /app
 
 ENV PNPM_HOME="/pnpm"
@@ -12,8 +12,8 @@ COPY . .
 RUN pnpm build
 
 # Bundle static assets with nginx
-FROM arm64v8/nginx:1.23.4-alpine as production
-ENV NODE_ENV production
+FROM arm64v8/nginx:1.23.4-alpine AS production
+ENV NODE_ENV=production
 # Copy built assets from `builder` image
 COPY --from=builder /app/dist /usr/share/nginx/html
 # Add your nginx.conf
